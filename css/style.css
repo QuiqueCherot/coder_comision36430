@@ -1,0 +1,546 @@
+/*ORGANIZACIÓN EN BEM BLOCK - ELEMENT - MODIFIER
+Para la clase del bloque (Header) podemos llamarla Header
+tenga el nombre del bloque. Si es Main, entonces la 
+clase es main.
+Para nombrar las clases de los elementos, por ejemplo
+si un ancor está dentro del header lo llamaríamos 
+header__logocontenedor para el anchor y header__logo.
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.header__logo{
+    width: 15rem;
+    margin: 2rem;
+}
+
+
+.header__menucontainer{
+    font-weight: bolder;
+    padding-left: 10px;
+    margin: 30px;
+            
+}
+
+.header__menu{
+
+    display: flex;
+    
+}
+.header__list   {
+    
+    margin-left: 2rem;
+    list-style: none;
+}
+
+nav a:hover{
+    color: rgb(211, 197, 223);
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+/*ACÁ TERMINA HEADER*/
+
+/*ACA COMIENZA MAIN*/
+
+.hero{
+      
+    height: 20rem;
+    width: 100%;      
+    background-image: url(../img/fondo_hero.jpg);
+    background-repeat: no-repeat;
+    background: size 50%;
+    background-position: right;
+    color: rgb(15, 43, 146);
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    
+    
+}
+
+.hero__titulo{
+    max-width: 50%;
+    padding-left: 2rem;
+
+}
+
+.hero__parrafo{
+    max-width: 50%;
+    padding-left: 2rem;
+}
+
+.hero__btncontainer{
+
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    padding-left: 8rem;
+}
+
+.hero__btn{
+
+    
+    border-radius: 2rem;
+    padding: 1rem;
+    background-color: rgba(168, 178, 211, 0.7);
+    font-size:medium;
+       
+}
+
+button a {
+    color: rgb(19, 3, 112);
+}
+
+button a:hover{
+    color: rgb(166, 86, 236);
+}
+
+.carrousel{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 5rem 5rem;
+    max-width: 100%;
+}
+
+.carrousel__img{
+    width: 70%;
+    height: 70%;
+}
+
+.empleos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.empleos__titulo{
+    margin: 3rem;
+    font-family: sans-serif;
+}
+.empleos__cuadros{
+    display: grid;
+    grid-template-columns: 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 1rem;
+}
+
+.empleos__item{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    margin: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 0px 35px #b3bbc7;
+}
+
+.empleos__input{
+        border-radius: 10px;
+        width: 8rem;
+        height: 2rem;
+        background-color: rgba(132, 148, 199, 0.7);
+        color: rgb(26, 1, 44);
+        font-size: large;  
+        text-align: center;
+}
+
+/*PARTE CSS JOBS*/
+.empleos__btn{
+        border-radius: 10px;
+        width: 6rem;
+        height: 1.5rem;
+        background-color: rgba(132, 148, 199, 0.7);
+        color: rgb(26, 1, 44);
+        font-size: medium;  
+        text-align: center;
+}
+
+/*TERMINA EL MAIN*/
+
+/*INICIA EL FOOTER*/
+
+.footer{
+    width: 100%;
+    padding: 50px;
+    margin-top: 2rem 0px;
+    background-image: url('../img/background-footer.svg');
+    background-size: cover;
+    bottom: 0;
+        
+}
+
+.footer__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 5rem;
+}
+
+.footer__box{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 40px;
+    color: #343434;
+}
+
+.footer__img{
+    width: 8rem;
+    
+}
+
+.footer_termstext{
+    max-width: 20rem;
+    margin-top: 1rem;
+    color: #555353;
+    font-weight: 700;
+
+}
+
+.footer_anchor{
+    margin-top: 10px;
+    padding: 5px 5px;
+    font-weight: 600;
+    color: #555353;
+}
+
+.footer_anchor:hover{
+    opacity: 0.8;
+}
+
+.footer_box a .fa-brands{
+    font-size: 20px;
+
+}
+/*ACA TERMINA FOOTER*/
+
+
+
+/*
+CSS CONTACTO
+*/
+
+/*FORMULARIO CONTACTO*/
+
+.form__contact{
+    background-color: rgba(168, 178, 211, 0.7);
+    border-radius: 20px;
+    max-width: 60%;
+    height: 16rem;
+    margin: 2rem auto;
+}
+
+.form_container{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.form_inputs{
+    margin: 2rem 2rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    
+}
+
+
+
+legend{
+    color: rgb(26, 1, 44);
+    font-size: 50px;
+    margin: 2rem 2rem;
+}
+.form__input{ 
+        
+        border-radius: 10px;
+        width: 15rem;
+        height: 3rem;
+        background-color: rgba(132, 148, 199, 0.7);
+        color: rgb(26, 1, 44);
+        font-size: large;  
+        text-align: center;
+           
+        
+}
+
+label{
+    font-size: large;
+}
+
+label img{
+    width: 1rem;
+}
+
+textarea {
+    width: 60%;
+    height: 4rem;
+    border-radius: 10px;
+    background-color: rgba(132, 148, 199, 0.7);
+    font-size: large; 
+    padding: 15px;
+}
+
+/*ACA TERMINA FORM CONTACTO*/
+
+/*ACA TERMINA CSS CONTACTO*/
+
+
+/*CSS SERVICIOS*/
+
+.servicios{
+    
+    border: black;
+    display: flex;
+    flex-direction: column;
+    
+
+}
+
+.servicios__titulo{
+   align-self: center; 
+   margin-bottom: 8rem;
+}
+
+.servicios__box{
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.servicios__container{
+
+    border-width: thick;
+    border-radius: 20%;
+    background-color: rgb(182, 160, 224,0.1);
+    height: 80vh;
+    width: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+}
+
+.servicios__icon{
+    width: 3rem;
+}
+
+.servicios__titcontainer{
+
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.servicios__parrafo{
+    text-align: center;
+}
+
+/*ACA TERMINA CSS SERVICIOS*/
+
+/*CSS NOSOTROS*/
+/*ACA COMIENZA HEADER NOSOTROS*/
+
+.main__nosotros{
+
+    height: 25rem;
+    width: 100%; 
+    background-image: url('../img/nosotros_header2.jpg'); 
+    background-repeat: no-repeat;
+    filter: brightness(85%);
+    background-size: cover;
+    color: rgb(235 240 255);
+    font-size: large;
+    display: flex;
+           
+}
+
+.main__noshead{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.nosotros__titulo{
+    width: 50%;
+    margin-top: 5rem;
+}
+
+.nosotros__parrafo{
+    
+    width: 25%;
+    max-height: 30%;
+    border: 1px solid rgb(1, 65, 124);
+    background-color: white;
+    color: rgb(1, 65, 124);
+    padding: 0 1rem;
+    margin-top: 5rem;
+    text-align: center;
+    margin-top: 21rem;
+}
+
+.nosotros__historia{
+
+    max-width: 40%;
+    margin-top: 2rem;
+    margin-left: 2rem;
+    border: 1px solid  rgb(1, 65, 124);
+    border-radius: 1rem;
+    padding: 1rem 1rem;
+    box-shadow: 0 0 25px  rgba(168, 178, 211, 0.7);
+    
+}
+
+
+.nosotros__contacto{
+    background-color: rgba(168, 178, 211, 0.7);
+    border-radius: 20px;
+    max-width: 60%;
+    height: 16rem;
+    margin: 4rem auto;
+}
+
+.nosotros__adjunto{
+    border-radius: 10px;
+    width: 15rem;
+    height: 3rem;
+    background-color: rgba(132, 148, 199, 0.7);
+    color: rgb(26, 1, 44);
+    font-size: large;  
+    text-align: center;
+    padding-top: 14px;
+}
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 425px) {
+    
+    .footer{
+        padding: 5px;
+    }
+    
+    .footer__container{
+        flex-direction: column;
+    }
+
+    .header{
+        flex-direction: column;
+    }
+
+    .header__menucontainer{
+        padding-left: 5px;
+        margin: 5px;
+    }
+
+    .header__list{
+        margin-left: 0.8rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero{
+        font-size: medium;
+        background-size: cover;
+        background-position: center;
+     
+    }
+
+    .hero__titulo{
+        max-width: 100%;
+        color:rgb(51 77 189);
+    }
+
+    .hero__parrafo{
+        max-width: 100%;
+        padding-left: 2rem;
+    }
+
+    .hero__btncontainer{
+
+        gap: 25px;
+        padding-left: 10px;
+        
+    }
+
+    .hero__btn{
+
+    
+        border-radius: 2rem;
+        padding: 10px;
+        background-color: rgba(168, 178, 211, 0.7);
+        font-size:medium;
+           
+    }
+
+    .carrousel{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 10px ;
+
+    }
+
+    .carrousel__img{
+        width: 100%;
+    }
+
+    .empleos__cuadros{
+        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+        margin-bottom: 2rem;
+    }
+
+    /*SERVICIOS*/
+
+    .servicios__titulo{
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .servicios__box{
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    /*CONTACTANOS*/
+
+    .form__contact{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .form_inputs{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+
+
+}
+
+
