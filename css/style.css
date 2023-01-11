@@ -11,6 +11,7 @@ header__logocontenedor para el anchor y header__logo.
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
 
 .header{
@@ -39,19 +40,31 @@ header__logocontenedor para el anchor y header__logo.
     
 }
 .header__list   {
-    
     margin-left: 2rem;
     list-style: none;
+    transform: scale(1);
+    transition: transform 0.8s;
 }
 
-nav a:hover{
-    color: rgb(211, 197, 223);
+
+.header__list:hover{
+    transform: scale(1.1);
 }
+
 
 a{
     text-decoration: none;
     color: black;
+    
 }
+
+
+nav a:hover{
+    color: rgb(140, 162, 236);
+    
+}
+
+
 /*ACÁ TERMINA HEADER*/
 
 /*ACA COMIENZA MAIN*/
@@ -196,13 +209,14 @@ button a:hover{
     max-width: 1200px;
     margin: auto;
     margin-top: 5rem;
+    font-size: small;
 }
 
 .footer__box{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 40px;
+    padding: 20px;
     color: #343434;
 }
 
