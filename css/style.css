@@ -1,68 +1,20 @@
-/*ORGANIZACIÓN EN BEM BLOCK - ELEMENT - MODIFIER
-Para la clase del bloque (Header) podemos llamarla Header
-tenga el nombre del bloque. Si es Main, entonces la 
-clase es main.
-Para nombrar las clases de los elementos, por ejemplo
-si un ancor está dentro del header lo llamaríamos 
-header__logocontenedor para el anchor y header__logo.
-*/
 
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 
-.header{
-    display: flex;
+.navbar__logo{
     justify-content: space-between;
-    align-items: center;
 }
 
-
-.header__logo{
+.navbar__img{
     width: 15rem;
-    margin: 2rem;
-}
-
-
-.header__menucontainer{
-    font-weight: bolder;
-    padding-left: 10px;
-    margin: 30px;
-            
-}
-
-.header__menu{
-
-    display: flex;
     
-}
-.header__list   {
-    margin-left: 2rem;
-    list-style: none;
-    transform: scale(1);
-    transition: transform 0.8s;
-}
+ }
 
 
-.header__list:hover{
-    transform: scale(1.1);
-}
-
-
-a{
-    text-decoration: none;
-    color: black;
-    
-}
-
-
-nav a:hover{
-    color: rgb(140, 162, 236);
-    
-}
 
 
 /*ACÁ TERMINA HEADER*/
@@ -462,35 +414,21 @@ textarea {
         flex-direction: column;
     }
 
-    .header{
-        flex-direction: column;
-    }
-
-    .header__menucontainer{
-        padding-left: 5px;
-        margin: 5px;
-    }
-
-    .header__list{
-        margin-left: 0.8rem;
-        margin-bottom: 1rem;
-    }
-
     .hero{
         font-size: medium;
-        background-size: cover;
-        background-position: center;
+        background-image: none;
      
     }
 
     .hero__titulo{
         max-width: 100%;
-        color:rgb(51 77 189);
+        color:rgb(4, 12, 51);
     }
 
     .hero__parrafo{
         max-width: 100%;
         padding-left: 2rem;
+        color: rgb(2, 12, 65) ;
     }
 
     .hero__btncontainer{
@@ -510,15 +448,8 @@ textarea {
            
     }
 
-    .carrousel{
-        display: flex;
-        justify-content: space-evenly;
-        margin: 10px ;
-
-    }
-
-    .carrousel__img{
-        width: 100%;
+    img, svg {
+        width: 70vh;
     }
 
     .empleos__cuadros{
@@ -534,11 +465,11 @@ textarea {
         margin-bottom: 4rem;
     }
 
-    .servicios__box{
+    .servicios__box {
         flex-direction: column;
+        gap: 3rem;
         align-items: center;
-        gap: 2rem;
-        margin-bottom: 2rem;
+        margin-bottom: 4rem;
     }
 
     /*CONTACTANOS*/
