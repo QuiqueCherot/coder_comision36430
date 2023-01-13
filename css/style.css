@@ -66,7 +66,6 @@
     padding: 1rem;
     background-color: rgba(168, 178, 211, 0.7);
     font-size:medium;
-       
 }
 
 button a {
@@ -197,6 +196,10 @@ button a:hover{
     opacity: 0.8;
 }
 
+.footer__boxlogo{
+    width: 100%;
+}
+
 .footer_box a .fa-brands{
     font-size: 20px;
 
@@ -302,14 +305,16 @@ textarea {
     border-width: thick;
     border-radius: 20%;
     background-color: rgb(182, 160, 224,0.1);
-    height: 80vh;
-    width: 60vh;
+    height: 70vh;
+    width: 50vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
     box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+    margin-bottom: 2rem;
+    padding: 1rem;
 }
 
 .servicios__icon{
@@ -404,8 +409,51 @@ textarea {
 
 /*RESPONSIVE*/
 
+@media screen and (min-width: 1024px){
+
+    .hero{
+        background-size: 50%;
+
+    }
+
+    .hero__btncontainer {
+        width: 50%;
+        gap: 50px;
+        padding-left: 0;
+    }
+
+}
+
+@media screen and (max-width: 768px){
+    
+    /*INDEX*/
+    .hero{
+        font-size: medium;
+        background-image: none;
+     
+    }
+
+    .hero__titulo{
+        max-width: 100%;
+    
+    }
+    
+    .hero__parrafo{
+        max-width: 100%;
+    }
+
+    .navbar__img {
+        margin-bottom: 2rem;
+    }
+
+
+    
+
+}
+
 @media screen and (max-width: 425px) {
     
+    /*INDEX*/
     .footer{
         padding: 5px;
     }
@@ -458,6 +506,11 @@ textarea {
         margin-bottom: 2rem;
     }
 
+    .navbar__img {
+        width: 13rem;
+        margin-bottom: 2rem;
+    }
+
     /*SERVICIOS*/
 
     .servicios__titulo{
@@ -472,6 +525,10 @@ textarea {
         margin-bottom: 4rem;
     }
 
+    .servicios__container{
+        padding: 0;
+    }
+
     /*CONTACTANOS*/
 
     .form__contact{
@@ -484,7 +541,12 @@ textarea {
         margin-bottom: 1rem;
         padding-bottom: 1rem;
     }
+    
+    /*JOBS*/
 
+    .empleos__titulo{
+        text-align: center;
+    }
 }
 
 
