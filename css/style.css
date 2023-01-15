@@ -5,16 +5,39 @@
     box-sizing: border-box;
 }
 
+
+/*ACA COMIENZA HEADER*/
+
 .navbar__logo{
     justify-content: space-between;
 }
 
 .navbar__img{
-    width: 15rem;
+    width: 5rem;
     
  }
 
+ .navbar__text{
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2rem;
+    color: black;
 
+}
+
+
+ .nav__prop {
+    color: black;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
+
+}
+.nav__prop:hover, .nav__prop:focus {
+    background-size: 100% 2px;
+    color: black;
+}
 
 
 /*ACÁ TERMINA HEADER*/
@@ -22,21 +45,20 @@
 /*ACA COMIENZA MAIN*/
 
 .hero{
-      
-    height: 20rem;
+    height: 30rem;
     width: 100%;      
     background-image: url(../img/fondo_hero.jpg);
     background-repeat: no-repeat;
-    background: size 50%;
-    background-position: right;
-    color: rgb(15, 43, 146);
+    background-size: cover;
+    color: white;
     font-size: large;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: flex-start;
-    margin-bottom: 4rem;
-    
+    justify-content: flex-end;
+    gap: 2rem;
+    padding-bottom: 3rem;
+    margin-bottom: 3rem;
+    background-position-y: center;
     
 }
 
@@ -47,44 +69,21 @@
 }
 
 .hero__parrafo{
-    max-width: 50%;
     padding-left: 2rem;
 }
 
-.hero__btncontainer{
-
-    display: flex;
-    gap: 50px;
-    justify-content: center;
-    padding-left: 8rem;
+.hero__div{
+    color: black;
 }
 
-.hero__btn{
-
-    
-    border-radius: 2rem;
-    padding: 1rem;
-    background-color: rgba(168, 178, 211, 0.7);
-    font-size:medium;
+.hero__div-btn{
+    background-color: #6c6969;
+    border-color: #6c6969;
 }
 
- .nav__prop {
-    background-image: linear-gradient(currentColor, currentColor);
-    background-position: 0% 100%;
-    background-repeat: no-repeat;
-    background-size: 0% 2px;
-    transition: background-size .5s;
-}
-.nav__prop:hover, .nav__prop:focus {
-    background-size: 100% 2px;
-}
-
-button a {
-    color: rgb(19, 3, 112);
-}
-
-button a:hover{
-    color: rgb(166, 86, 236);
+.hero__div-btn:hover{
+    background-color: rgb(132, 135, 136);
+    border-color: rgb(132, 135, 136);
 }
 
 .carrousel{
@@ -171,7 +170,7 @@ button a:hover{
     justify-content: space-between;
     max-width: 1200px;
     margin: auto;
-    margin-top: 5rem;
+    margin-top: 2rem;
     font-size: small;
 }
 
@@ -423,10 +422,6 @@ textarea {
 
 @media screen and (min-width: 1024px){
 
-    .hero{
-        background-size: 50%;
-
-    }
 
     .hero__btncontainer {
         width: 50%;
@@ -441,7 +436,6 @@ textarea {
     /*INDEX*/
     .hero{
         font-size: medium;
-        background-image: none;
      
     }
 
@@ -532,7 +526,7 @@ textarea {
     }
 
     img, svg {
-        width: 70vh;
+        width: 65vh;
     }
 
     .empleos__cuadros{
@@ -542,8 +536,7 @@ textarea {
     }
 
     .navbar__img {
-        width: 13rem;
-        margin-bottom: 2rem;
+        width: 3rem;
     }
 
     /*SERVICIOS*/
