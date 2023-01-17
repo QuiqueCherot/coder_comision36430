@@ -82,8 +82,8 @@
 }
 
 .hero__div-btn:hover{
-    background-color: rgb(132, 135, 136);
-    border-color: rgb(132, 135, 136);
+    background-color: rgb(1 131 143);
+    border-color: rgb(1 131 143);
 }
 
 .carrousel{
@@ -109,6 +109,7 @@
     margin: 3rem;
     font-family: sans-serif;
 }
+
 .empleos__cuadros{
     display: grid;
     grid-template-columns: 350px 350px;
@@ -126,29 +127,23 @@
     margin: 1rem;
     border: 1px solid black;
     border-radius: 10px;
-    box-shadow: 0px 0px 35px #b3bbc7;
+    box-shadow: 0px 0px 20px rgb(1 131 143);
 }
 
 .empleos__input{
         border-radius: 10px;
         width: 8rem;
         height: 2rem;
-        background-color: rgba(132, 148, 199, 0.7);
-        color: rgb(26, 1, 44);
+        background-color: #6c6969;
+        color: white;
         font-size: large;  
         text-align: center;
 }
 
-/*PARTE CSS JOBS*/
-.empleos__btn{
-        border-radius: 10px;
-        width: 6rem;
-        height: 1.5rem;
-        background-color: rgba(132, 148, 199, 0.7);
-        color: rgb(26, 1, 44);
-        font-size: medium;  
-        text-align: center;
+.empleos__input:hover{
+    background-color: rgb(1 131 143);
 }
+
 
 /*TERMINA EL MAIN*/
 
@@ -316,8 +311,8 @@ textarea {
     border-width: thick;
     border-radius: 20%;
     background-color: rgb(182, 160, 224,0.1);
-    height: 70vh;
-    width: 50vh;
+    height: 75vh;
+    width: 55vh;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -374,13 +369,13 @@ textarea {
 
 .nosotros__parrafo{
     
-    width: 25%;
-    max-height: 30%;
+    width: 35%;
     border: 1px solid rgb(1, 65, 124);
-    background-color: white;
-    color: rgb(1, 65, 124);
-    padding: 0 1rem;
-    margin-top: 5rem;
+    background-color: #6c9aab;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    padding: 1rem;
     text-align: center;
     margin-top: 21rem;
 }
@@ -429,6 +424,26 @@ textarea {
         padding-left: 0;
     }
 
+    /*SERVICIOS*/
+
+    .servicios__box {
+        font-size: 19px;
+    }
+
+    .servicios__titcontainer{
+        font-size: 25px;
+    }
+
+    .servicios__icon{
+        width: 5rem;
+    }
+
+    /*NOSOTROS*/
+
+    .nosotros__contacto{
+        max-width: 90%;
+        height: auto;
+    }
 }
 
 @media screen and (max-width: 768px){
@@ -477,6 +492,22 @@ textarea {
         margin-top: 1rem;   
     }
     
+    .nosotros__historia{
+
+        max-width: 50%;
+    }
+
+    .nosotros__contacto{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .nosotros__parrafo {
+        width: 35%;
+        background-color: #6c9aab;
+        color: white;
+        margin-top: 19rem;
+    }
 
 }
 
@@ -494,6 +525,7 @@ textarea {
     .hero{
         font-size: medium;
         background-image: none;
+        margin-top: 4rem;
      
     }
 
@@ -555,6 +587,7 @@ textarea {
 
     .servicios__container{
         padding: 0;
+        
     }
 
     /*CONTACTANOS*/
@@ -566,7 +599,7 @@ textarea {
     }
 
     .form__contact{
-        max-width: 100%;
+        max-width: 90%;
         height: auto;
     }
 
@@ -584,6 +617,99 @@ textarea {
 
     .empleos__titulo{
         text-align: center;
+    }
+
+    .empleos__item{
+        align-items: center;
+    }
+
+    /*NOSOTROS*/
+
+    .main__nosotros{
+        background-image: none;
+    }
+
+    .nosotros__titulo{
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nosotros__parrafo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nosotros__historia{
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nosotros__contacto{
+        background-color: rgba(168, 178, 211, 0.7);
+        border-radius: 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 4rem auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    /*INDEX*/
+    .hero{
+        
+        margin-top: 8rem;
+     
+    }
+
+    /*SERVICIOS*/
+
+    .servicios__container{
+        width: 50vh;
+    }
+
+    /*CONTACTO*/
+
+    .form__contact{
+        width: 90%;
+    }
+    legend{
+        font-size: 40px;
+    }
+
+    /*NOSOTROS*/
+
+    .main__nosotros{
+        background-image: none;
+    }
+
+    .nosotros__titulo{
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nosotros__parrafo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nosotros__historia{
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nosotros__contacto{
+        background-color: rgba(168, 178, 211, 0.7);
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+        margin: 4rem auto;
     }
 }
 
