@@ -261,11 +261,11 @@ legend{
         
 }
 
-label{
+.form__label{
     font-size: large;
 }
 
-label img{
+.form__img{
     width: 1rem;
 }
 
@@ -340,7 +340,7 @@ textarea {
 /*CSS NOSOTROS*/
 /*ACA COMIENZA HEADER NOSOTROS*/
 
-.main__nosotros{
+.nosotros{
 
     height: 25rem;
     width: 100%; 
@@ -354,7 +354,7 @@ textarea {
            
 }
 
-.main__noshead{
+.nosotros__head{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -623,7 +623,7 @@ textarea {
 
     /*NOSOTROS*/
 
-    .main__nosotros{
+    .nosotros{
         background-image: none;
     }
 

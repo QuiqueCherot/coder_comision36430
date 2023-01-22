@@ -1,0 +1,301 @@
+/*RESPONSIVE*/
+
+@media screen and (min-width: 1024px){
+
+
+    .hero__btncontainer {
+        width: 50%;
+        gap: 50px;
+        padding-left: 0;
+    }
+
+    /*SERVICIOS*/
+
+    .servicios__box {
+        font-size: 19px;
+    }
+
+    .servicios__titcontainer{
+        font-size: 25px;
+    }
+
+    .servicios__icon{
+        width: 5rem;
+    }
+
+    /*NOSOTROS*/
+
+    .nosotros__contacto{
+        max-width: 90%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 768px){
+    
+    /*INDEX*/
+    .hero{
+        font-size: medium;
+     
+    }
+
+    .hero__titulo{
+        max-width: 100%;
+    
+    }
+    
+    .hero__parrafo{
+        max-width: 100%;
+    }
+
+    .navbar__img {
+        margin-bottom: 2rem;
+    }
+
+    /*CONTACTANOS*/
+
+    legend {
+        margin: 0;
+        font-size: 3rem;
+    }
+
+    .form__contact{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .form_inputs{
+        padding-bottom: 1rem;
+    }
+
+    .form__input{
+        margin-top: 1rem;
+    }
+
+
+    textarea{
+        margin-top: 1rem;   
+    }
+    
+    .nosotros__historia{
+
+        max-width: 50%;
+    }
+
+    .nosotros__contacto{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .nosotros__parrafo {
+        width: 35%;
+        background-color: #6c9aab;
+        color: white;
+        margin-top: 19rem;
+    }
+
+}
+
+@media screen and (max-width: 425px) {
+    
+    /*INDEX*/
+    .footer{
+        padding: 5px;
+    }
+    
+    .footer__container{
+        flex-direction: column;
+    }
+
+    .hero{
+        font-size: medium;
+        background-image: none;
+        margin-top: 4rem;
+     
+    }
+
+    .hero__titulo{
+        max-width: 100%;
+        color:rgb(4, 12, 51);
+    }
+
+    .hero__parrafo{
+        max-width: 100%;
+        padding-left: 2rem;
+        color: rgb(2, 12, 65) ;
+    }
+
+    .hero__btncontainer{
+
+        gap: 25px;
+        padding-left: 10px;
+        
+    }
+
+    .hero__btn{
+
+    
+        border-radius: 2rem;
+        padding: 10px;
+        background-color: rgba(168, 178, 211, 0.7);
+        font-size:medium;
+           
+    }
+
+    img, svg {
+        width: 65vh;
+    }
+
+    .empleos__cuadros{
+        grid-template-columns: 350px;
+        grid-template-rows: 300px;
+        margin-bottom: 2rem;
+    }
+
+    .navbar__img {
+        width: 3rem;
+    }
+
+    /*SERVICIOS*/
+
+    .servicios__titulo{
+        margin-top: 1rem;
+        margin-bottom: 4rem;
+    }
+
+    .servicios__box {
+        flex-direction: column;
+        gap: 3rem;
+        align-items: center;
+        margin-bottom: 4rem;
+    }
+
+    .servicios__container{
+        padding: 0;
+        
+    }
+
+    /*CONTACTANOS*/
+
+    legend {
+        margin: 0;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .form__contact{
+        max-width: 90%;
+        height: auto;
+    }
+
+    .form_inputs{
+        flex-direction: column;
+        margin-bottom: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    textarea{
+        width: 15rem;    
+    }
+    
+    /*JOBS*/
+
+    .empleos__titulo{
+        text-align: center;
+    }
+
+    .empleos__item{
+        align-items: center;
+    }
+
+    /*NOSOTROS*/
+
+    .main__nosotros{
+        background-image: none;
+    }
+
+    .nosotros__titulo{
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nosotros__parrafo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nosotros__historia{
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nosotros__contacto{
+        background-color: rgba(168, 178, 211, 0.7);
+        border-radius: 20px;
+        max-width: 90%;
+        height: auto;
+        margin: 4rem auto;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    
+    /*INDEX*/
+    .hero{
+        
+        margin-top: 8rem;
+     
+    }
+
+    /*SERVICIOS*/
+
+    .servicios__container{
+        width: 50vh;
+    }
+
+    /*CONTACTO*/
+
+    .form__contact{
+        width: 90%;
+    }
+    legend{
+        font-size: 40px;
+    }
+
+    /*NOSOTROS*/
+
+    .main__nosotros{
+        background-image: none;
+    }
+
+    .nosotros__titulo{
+        width: 100%;
+        color: black;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    .nosotros__parrafo{
+        width: 100%;
+        margin-top: 1rem;
+    }
+
+    .nosotros__historia{
+        max-width: 100%;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .nosotros__contacto{
+        background-color: rgba(168, 178, 211, 0.7);
+        border-radius: 20px;
+        max-width: 100%;
+        height: auto;
+        margin: 4rem auto;
+    }
+}
+
+

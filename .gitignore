@@ -1,0 +1,9 @@
+# Ignora la carpeta node_modules
+node_modules
+
+#Ignora archivo wireframe
+wireframe_Enrique-Cherot.pdf
+
+#Ignora package-lock
+package-lock.json
+

@@ -1,0 +1,50 @@
+/*FORMULARIO CONTACTO*/
+.form{
+    background-color: rgba(146, 167, 243, 0.76);
+    border-radius: 20px;
+    max-width: 60%;
+    margin: 2rem auto;
+    &_container{
+        display: flex;
+        justify-content: space-between;   
+    }
+    &_inputs{
+        margin: 2rem 2rem;
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+        padding-bottom: 2rem;  
+    }
+    &__legend{
+        color: black;
+        font-size: 50px;
+        margin: 1rem 1rem;
+    }
+    &__input{         
+        border-radius: 10px;
+        width: 15rem;
+        height: 3rem;
+        background-color: #0037ff45;
+        font-size: large;  
+        text-align: center;
+        color: black;     
+    }
+    &__textarea {
+        width: 60%;
+        height: 4rem;
+        border-radius: 10px;
+        background-color: #0037ff45;
+        font-size: large;
+        color: black; 
+        padding: 15px;
+    }
+    &__label{
+        font-size: large;
+    }
+    
+    &__img{
+        width: 1rem;
+    }
+}
+
+/*ACA TERMINA FORM CONTACTO*/

@@ -1,0 +1,22 @@
+{
+  "name": "curso_coderhouse",
+  "version": "1.0.0",
+  "description": "Paquete de node para compilar SCSS a CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/main.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QuiqueCherot/coder_comision36430.git"
+  },
+  "author": "Enrique Cherot",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QuiqueCherot/coder_comision36430/issues"
+  },
+  "homepage": "https://github.com/QuiqueCherot/coder_comision36430#readme"
+}
+

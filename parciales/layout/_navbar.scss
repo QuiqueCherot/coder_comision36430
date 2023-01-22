@@ -1,0 +1,31 @@
+/*ACA COMIENZA NAVBAR*/
+.navbar {
+
+    &__logo{
+    justify-content: space-between;
+    }
+    &__img{
+        width: 5rem;        
+    }
+    &__text{
+        font-family: 'Kaushan Script', cursive;
+        font-size: 2rem;
+        color: black;
+    }
+    &__prop {
+        color: black;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
+        &:hover, &:focus {
+            background-size: 100% 2px;
+            color: rgb(1, 131, 143);
+        }
+    }
+}
+
+
+
+/*ACÁ TERMINA NAVBAR*/
