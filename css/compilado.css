@@ -72,7 +72,7 @@
 /*ACA TERMINA FOOTER*/
 /*FORMULARIO CONTACTO*/
 .form {
-  background-color: rgba(146, 167, 243, 0.76);
+  background-color: #92a7f3;
   border-radius: 20px;
   max-width: 60%;
   margin: 2rem auto; }
@@ -99,7 +99,6 @@
     color: black; }
   .form__textarea {
     width: 60%;
-    height: 4rem;
     border-radius: 10px;
     background-color: #0037ff45;
     font-size: large;
@@ -295,7 +294,7 @@
     width: 5rem; }
   /*NOSOTROS*/
   .nosotros__contacto {
-    max-width: 90%;
+    max-width: 70%;
     height: auto; } }
 
 @media screen and (max-width: 768px) {
@@ -309,7 +308,7 @@
   .navbar__img {
     margin-bottom: 2rem; }
   /*CONTACTANOS*/
-  legend {
+  .form__legend {
     margin: 0;
     font-size: 3rem; }
   .form__contact {
@@ -319,8 +318,9 @@
     padding-bottom: 1rem; }
   .form__input {
     margin-top: 1rem; }
-  textarea {
-    margin-top: 1rem; }
+  .form__textarea {
+    margin-top: 1rem;
+    width: 60%; }
   .nosotros__historia {
     max-width: 50%; }
   .nosotros__contacto {
@@ -376,8 +376,8 @@
     margin-bottom: 4rem; }
   .servicios__container {
     padding: 0; }
-  /*CONTACTANOS*/
-  legend {
+  /*FORM*/
+  .form__legend {
     margin: 0;
     text-align: center;
     font-size: 3rem; }
@@ -388,7 +388,7 @@
     flex-direction: column;
     margin-bottom: 1rem;
     padding-bottom: 1rem; }
-  textarea {
+  .form__textarea {
     width: 15rem; }
   /*JOBS*/
   .empleos__titulo {
@@ -396,11 +396,11 @@
   .empleos__item {
     align-items: center; }
   /*NOSOTROS*/
-  .main__nosotros {
+  .nosotros {
     background-image: none; }
   .nosotros__titulo {
     width: 100%;
-    color: black;
+    color: #6e8d99;
     text-align: center;
     margin-top: 1rem; }
   .nosotros__parrafo {
@@ -427,14 +427,14 @@
   /*CONTACTO*/
   .form__contact {
     width: 90%; }
-  legend {
+  .form_legend {
     font-size: 40px; }
   /*NOSOTROS*/
-  .main__nosotros {
+  .nosotros {
     background-image: none; }
   .nosotros__titulo {
     width: 100%;
-    color: black;
+    color: #6e8d99;
     text-align: center;
     margin-top: 1rem; }
   .nosotros__parrafo {
@@ -445,7 +445,7 @@
     margin-left: 0;
     text-align: center; }
   .nosotros__contacto {
-    background-color: rgba(168, 178, 211, 0.7);
+    background-color: #a8b2d3;
     border-radius: 20px;
     max-width: 100%;
     height: auto;
