@@ -4,49 +4,63 @@
     
      border: black;
      display: flex;
-     flex-direction: column;
-     
+     flex-direction: column;   
+     &__header{
+        background-image: url(/img/banner_servicios.jpg);
+        background-repeat: no-repeat;
+        height: 20rem;
+        background-size: cover;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+     }
+     &__titulo{
+        color: black;
+     }
+     &__box{
+ 
+        display: flex;
+        justify-content: space-evenly;
+        animation-duration: 3s;
+        animation-name: slidein;
+    }
+    &__container{ 
+        border-width: thick;
+        width: 55vh;
+        border-radius: 20%;
+        background-color: rgba(182, 160, 224,0.1);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+        margin-bottom: 2rem;
+    }    
+    &__icon{
+        width: 3rem;
+    }    
+    &__titcontainer{    
+        font-family: sans-serif;
+        text-align: center;
+    }    
+    &__parrafo{
+        text-align: center;
+    }
  
  }
  
- .servicios__titulo{
-    align-self: center; 
-    margin-bottom: 8rem;
- }
+ @keyframes slidein {
+    from {
+      opacity: 0;
+    }
+  
+    to {
+      opacity: 1;
+    }
+  }
  
- .servicios__box{
  
-     display: flex;
-     justify-content: space-evenly;
- }
- 
- .servicios__container{
- 
-     border-width: thick;
-     width: 55vh;
-     border-radius: 20%;
-     background-color: rgba(182, 160, 224,0.1);
-     display: flex;
-     flex-direction: column;
-     flex-wrap: wrap;
-     gap: 1rem;
-     align-items: center;
-     box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
-     margin-bottom: 2rem;
- }
- 
- .servicios__icon{
-     width: 3rem;
- }
- 
- .servicios__titcontainer{
- 
-     font-family: sans-serif;
-     text-align: center;
- }
- 
- .servicios__parrafo{
-     text-align: center;
- }
  
  /*ACA TERMINA CSS SERVICIOS*/

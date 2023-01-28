@@ -18,6 +18,7 @@
 
 .navbar__prop {
   color: black;
+  font-weight: 500;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 0% 100%;
   background-repeat: no-repeat;
@@ -125,7 +126,8 @@
   gap: 2rem;
   padding-bottom: 3rem;
   margin-bottom: 3rem;
-  background-position-y: center; }
+  background-position-y: center;
+  filter: hue-rotate(45deg); }
   .hero__titulo {
     max-width: 50%;
     padding-left: 2rem; }
@@ -158,6 +160,10 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between; }
+  .empleos__header {
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 3rem; }
   .empleos__titulo {
     margin: 3rem;
     font-family: sans-serif; }
@@ -198,37 +204,47 @@
   border: black;
   display: flex;
   flex-direction: column; }
+  .servicios__header {
+    background-image: url(/img/banner_servicios.jpg);
+    background-repeat: no-repeat;
+    height: 20rem;
+    background-size: cover;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+  .servicios__titulo {
+    color: black; }
+  .servicios__box {
+    display: flex;
+    justify-content: space-evenly;
+    animation-duration: 3s;
+    animation-name: slidein; }
+  .servicios__container {
+    border-width: thick;
+    width: 55vh;
+    border-radius: 20%;
+    background-color: rgba(182, 160, 224, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+    margin-bottom: 2rem; }
+  .servicios__icon {
+    width: 3rem; }
+  .servicios__titcontainer {
+    font-family: sans-serif;
+    text-align: center; }
+  .servicios__parrafo {
+    text-align: center; }
 
-.servicios__titulo {
-  align-self: center;
-  margin-bottom: 8rem; }
-
-.servicios__box {
-  display: flex;
-  justify-content: space-evenly; }
-
-.servicios__container {
-  border-width: thick;
-  width: 55vh;
-  border-radius: 20%;
-  background-color: rgba(182, 160, 224, 0.1);
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: center;
-  box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
-  margin-bottom: 2rem; }
-
-.servicios__icon {
-  width: 3rem; }
-
-.servicios__titcontainer {
-  font-family: sans-serif;
-  text-align: center; }
-
-.servicios__parrafo {
-  text-align: center; }
+@keyframes slidein {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }
 
 /*ACA TERMINA CSS SERVICIOS*/
 /*CSS NOSOTROS*/
@@ -286,6 +302,8 @@
 /*ACA TERMINA CSS NOSOTROS*/
 /*RESPONSIVE*/
 @media screen and (min-width: 1024px) {
+  .hero__titulo {
+    max-width: 100%; }
   .hero__btncontainer {
     width: 50%;
     gap: 50px;
@@ -371,6 +389,10 @@
   .navbar__img {
     width: 3rem; }
   /*SERVICIOS*/
+  .servicios__header {
+    background-image: none;
+    height: 4rem;
+    margin-top: 1rem; }
   .servicios__titulo {
     margin-top: 1rem;
     margin-bottom: 4rem; }
@@ -429,6 +451,10 @@
   /*SERVICIOS*/
   .servicios__container {
     width: 50vh; }
+  .servicios__header {
+    background-image: none;
+    height: 4rem;
+    margin-top: 1rem; }
   /*CONTACTO*/
   .form__contact {
     width: 90%; }

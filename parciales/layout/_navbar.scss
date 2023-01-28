@@ -1,6 +1,6 @@
 /*ACA COMIENZA NAVBAR*/
 .navbar {
-
+  
     &__logo{
     justify-content: space-between;
     }
@@ -14,6 +14,7 @@
     }
     &__prop {
         color: black;
+        font-weight:500;
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 0% 100%;
         background-repeat: no-repeat;

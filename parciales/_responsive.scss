@@ -2,7 +2,10 @@
 
 @media screen and (min-width: 1024px){
 
-
+    .hero__titulo{
+        max-width: 100%;
+    }
+    
     .hero__btncontainer {
         width: 50%;
         gap: 50px;
@@ -160,6 +163,12 @@
 
     /*SERVICIOS*/
 
+    .servicios__header{
+        background-image: none;
+        height: 4rem;
+        margin-top: 1rem;
+    }
+    
     .servicios__titulo{
         margin-top: 1rem;
         margin-bottom: 4rem;
@@ -256,6 +265,12 @@
 
     .servicios__container{
         width: 50vh;
+    }
+
+    .servicios__header{
+        background-image: none;
+        height: 4rem;
+        margin-top: 1rem;
     }
 
     /*CONTACTO*/
