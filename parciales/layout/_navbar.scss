@@ -22,7 +22,7 @@
         transition: background-size .5s;
         &:hover, &:focus {
             background-size: 100% 2px;
-            color: rgb(1, 131, 143);
+            color: $base-color;
         }
     }
 }

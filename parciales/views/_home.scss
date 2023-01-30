@@ -11,26 +11,37 @@
     flex-direction: column;
     justify-content: flex-end;
     gap: 2rem;
-    padding-bottom: 3rem;
-    margin-bottom: 3rem;
+    padding-bottom: $block-space;
+    margin-bottom: $block-space;
     background-position-y: center;
     filter: hue-rotate(45deg);
     &__titulo{
         max-width: 50%;
-        padding-left: 2rem;    
+        padding-left: 2rem;  
+        text-shadow: 0 0 15px rgb(0, 0, 0);  
     }    
     &__parrafo{
         padding-left: 2rem;
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
     }    
     &__div{
-        color: black;
+        color: white;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        width: 60%;
+        background-color: rgba(0, 0, 0,0.0);
+        border: 2px white;
+        border-top-style: solid;
+        border-right-style: hidden;
+        border-bottom-style: solid;
+        border-left-style: hidden;
+        border-radius: 10px;
     }    
-    &__div-btn{
+    &__divbtn{
         background-color: #6c6969;
         border-color: #6c6969;
         &:hover{
-            background-color: rgb(1, 131, 143);
-            border-color: rgb(1, 131, 143);
+            background-color: $base-color;
+            border-color: $base-color;
         }
     }      
 }
@@ -54,13 +65,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    &__header{
+    &__banner{
+        position: relative;
+        margin-bottom: $block-space
+    }
+    &__img{
         width: 100%;
-        height: 35rem;
-        margin-bottom: 3rem;
+    }
+    &__bantittle{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        font-weight: bolder;
+        margin: $block-space;
     }
     &__titulo{
-        margin: 3rem;
+        margin: $block-space;
         font-family: sans-serif;
     }    
     &__cuadros{
@@ -81,7 +104,7 @@
         margin: 1rem;
         border: 1px solid black;
         border-radius: 10px;
-        box-shadow: 0px 0px 20px rgb(1, 131, 143);
+        box-shadow: 0px 0px 20px $base-color;
     } 
     &__nombreposicion{
         text-align: center;
@@ -96,7 +119,7 @@
             text-align: center;
             align-self: center;
             &:hover{
-                background-color: rgb(1, 131, 143);
+                background-color: $base-color;
             }
     }    
 }

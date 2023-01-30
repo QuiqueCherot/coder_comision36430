@@ -1,20 +1,26 @@
 @charset "UTF-8";
+/* COLORS*/
+/*BLOCK SPACING*/
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+}
 
 /*ACA COMIENZA NAVBAR*/
 .navbar__logo {
-  justify-content: space-between; }
+  justify-content: space-between;
+}
 
 .navbar__img {
-  width: 5rem; }
+  width: 5rem;
+}
 
 .navbar__text {
   font-family: 'Kaushan Script', cursive;
   font-size: 2rem;
-  color: black; }
+  color: black;
+}
 
 .navbar__prop {
   color: black;
@@ -23,10 +29,13 @@
   background-position: 0% 100%;
   background-repeat: no-repeat;
   background-size: 0% 2px;
-  transition: background-size .5s; }
-  .navbar__prop:hover, .navbar__prop:focus {
-    background-size: 100% 2px;
-    color: #01838f; }
+  transition: background-size .5s;
+}
+
+.navbar__prop:hover, .navbar__prop:focus {
+  background-size: 100% 2px;
+  color: #01838f;
+}
 
 /*ACÁ TERMINA NAVBAR*/
 /*INICIA EL FOOTER*/
@@ -36,79 +45,113 @@
   margin-top: 2rem 0px;
   background-image: url("../img/background-footer.svg");
   background-size: cover;
-  bottom: 0; }
-  .footer__container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: auto;
-    margin-top: 2rem;
-    font-size: small; }
-  .footer__box {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
-    color: #343434; }
-  .footer__img {
-    width: 8rem; }
-  .footer_termstext {
-    max-width: 20rem;
-    margin-top: 1rem;
-    color: #555353;
-    font-weight: 700; }
-  .footer_anchor {
-    margin-top: 10px;
-    padding: 5px 5px;
-    font-weight: 600;
-    color: #555353; }
-    .footer_anchor:hover {
-      opacity: 0.8; }
-  .footer__boxlogo {
-    width: 100%; }
-  .footer_box a .fa-brands {
-    font-size: 20px; }
+  bottom: 0;
+}
+
+.footer__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 2rem;
+  font-size: small;
+}
+
+.footer__box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+  color: #343434;
+}
+
+.footer__img {
+  width: 8rem;
+}
+
+.footer_termstext {
+  max-width: 20rem;
+  margin-top: 1rem;
+  color: #555353;
+  font-weight: 700;
+}
+
+.footer_anchor {
+  margin-top: 10px;
+  padding: 5px 5px;
+  font-weight: 600;
+  color: #555353;
+}
+
+.footer_anchor:hover {
+  opacity: 0.8;
+  color: #01838f;
+}
+
+.footer__boxlogo {
+  width: 100%;
+}
+
+.footer_box a .fa-brands {
+  font-size: 20px;
+}
 
 /*ACA TERMINA FOOTER*/
 /*FORMULARIO CONTACTO*/
 .form {
-  background-color: #92a7f3;
+  background-color: #c4cae0;
   border-radius: 20px;
   max-width: 60%;
-  margin: 2rem auto; }
-  .form_container {
-    display: flex;
-    justify-content: space-between; }
-  .form_inputs {
-    margin: 2rem 2rem;
-    display: flex;
-    gap: 2rem;
-    align-items: center;
-    padding-bottom: 2rem; }
-  .form__legend {
-    color: black;
-    font-size: 50px;
-    margin: 1rem 1rem; }
-  .form__input {
-    border-radius: 10px;
-    width: 15rem;
-    height: 3rem;
-    background-color: #0037ff45;
-    font-size: large;
-    text-align: center;
-    color: black; }
-  .form__textarea {
-    width: 60%;
-    border-radius: 10px;
-    background-color: #0037ff45;
-    font-size: large;
-    color: black;
-    padding: 15px; }
-  .form__label {
-    font-size: large; }
-  .form__img {
-    width: 1rem; }
+  margin: 2rem auto;
+}
+
+.form__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form_inputs {
+  margin: 0 3rem;
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  padding-bottom: 2rem;
+}
+
+.form__legend {
+  color: black;
+  font-size: 50px;
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.form__input {
+  border-radius: 10px;
+  width: 15rem;
+  height: 3rem;
+  background-color: #d2dfe7;
+  font-size: large;
+  text-align: center;
+  color: black;
+}
+
+.form__textarea {
+  width: 60%;
+  border-radius: 10px;
+  background-color: #d2dfe7;
+  font-size: large;
+  color: black;
+  padding: 15px;
+}
+
+.form__label {
+  font-size: large;
+}
+
+.form__img {
+  width: 1rem;
+}
 
 /*ACA TERMINA FORM CONTACTO*/
 /*ACA EMPIEZA HERO*/
@@ -127,20 +170,42 @@
   padding-bottom: 3rem;
   margin-bottom: 3rem;
   background-position-y: center;
-  filter: hue-rotate(45deg); }
-  .hero__titulo {
-    max-width: 50%;
-    padding-left: 2rem; }
-  .hero__parrafo {
-    padding-left: 2rem; }
-  .hero__div {
-    color: black; }
-  .hero__div-btn {
-    background-color: #6c6969;
-    border-color: #6c6969; }
-    .hero__div-btn:hover {
-      background-color: #01838f;
-      border-color: #01838f; }
+  filter: hue-rotate(45deg);
+}
+
+.hero__titulo {
+  max-width: 50%;
+  padding-left: 2rem;
+  text-shadow: 0 0 15px black;
+}
+
+.hero__parrafo {
+  padding-left: 2rem;
+  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+.hero__div {
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  width: 60%;
+  background-color: rgba(0, 0, 0, 0);
+  border: 2px white;
+  border-top-style: solid;
+  border-right-style: hidden;
+  border-bottom-style: solid;
+  border-left-style: hidden;
+  border-radius: 10px;
+}
+
+.hero__divbtn {
+  background-color: #6c6969;
+  border-color: #6c6969;
+}
+
+.hero__divbtn:hover {
+  background-color: #01838f;
+  border-color: #01838f;
+}
 
 /*ACA TERMINA HERO*/
 /* INICIA CAROUSEL*/
@@ -148,10 +213,13 @@
   display: flex;
   justify-content: space-evenly;
   margin: 5rem 5rem;
-  max-width: 100%; }
-  .carrousel__img {
-    width: 70%;
-    height: 70%; }
+  max-width: 100%;
+}
+
+.carrousel__img {
+  width: 70%;
+  height: 70%;
+}
 
 /*TERMINA CAROUSEL*/
 /*ACA EMPIEZA EMPLEOS*/
@@ -159,325 +227,520 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between; }
-  .empleos__header {
-    width: 100%;
-    height: 35rem;
-    margin-bottom: 3rem; }
-  .empleos__titulo {
-    margin: 3rem;
-    font-family: sans-serif; }
-  .empleos__cuadros {
-    display: grid;
-    grid-template-columns: 350px 350px;
-    grid-template-rows: 300px 300px 300px;
-    gap: 1rem; }
-  .empleos__contenido {
-    list-style: none;
-    margin: 5px; }
-  .empleos__item {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 1rem;
-    margin: 1rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 20px #01838f; }
-  .empleos__nombreposicion {
-    text-align: center; }
-  .empleos__input {
-    border-radius: 10px;
-    width: 8rem;
-    height: 2rem;
-    background-color: #6c6969;
-    color: white;
-    font-size: large;
-    text-align: center;
-    align-self: center; }
-    .empleos__input:hover {
-      background-color: #01838f; }
+  justify-content: space-between;
+}
+
+.empleos__banner {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+.empleos__img {
+  width: 100%;
+}
+
+.empleos__bantittle {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
+  margin: 3rem;
+}
+
+.empleos__titulo {
+  margin: 3rem;
+  font-family: sans-serif;
+}
+
+.empleos__cuadros {
+  display: grid;
+  grid-template-columns: 350px 350px;
+  grid-template-rows: 300px 300px 300px;
+  gap: 1rem;
+}
+
+.empleos__contenido {
+  list-style: none;
+  margin: 5px;
+}
+
+.empleos__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1rem;
+  margin: 1rem;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px #01838f;
+}
+
+.empleos__nombreposicion {
+  text-align: center;
+}
+
+.empleos__input {
+  border-radius: 10px;
+  width: 8rem;
+  height: 2rem;
+  background-color: #6c6969;
+  color: white;
+  font-size: large;
+  text-align: center;
+  align-self: center;
+}
+
+.empleos__input:hover {
+  background-color: #01838f;
+}
 
 /*ACA TERMINA EMPLEOS*/
 /*CSS SERVICIOS*/
 .servicios {
   border: black;
   display: flex;
-  flex-direction: column; }
-  .servicios__header {
-    background-image: url(/img/banner_servicios.jpg);
-    background-repeat: no-repeat;
-    height: 20rem;
-    background-size: cover;
-    margin-bottom: 3rem;
-    display: flex;
-    align-items: center;
-    justify-content: center; }
-  .servicios__titulo {
-    color: black; }
-  .servicios__box {
-    display: flex;
-    justify-content: space-evenly;
-    animation-duration: 3s;
-    animation-name: slidein; }
-  .servicios__container {
-    border-width: thick;
-    width: 55vh;
-    border-radius: 20%;
-    background-color: rgba(182, 160, 224, 0.1);
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    gap: 1rem;
-    align-items: center;
-    box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
-    margin-bottom: 2rem; }
-  .servicios__icon {
-    width: 3rem; }
-  .servicios__titcontainer {
-    font-family: sans-serif;
-    text-align: center; }
-  .servicios__parrafo {
-    text-align: center; }
+  flex-direction: column;
+}
+
+.servicios__header {
+  background-image: url(../img/banner_servicios.jpg);
+  background-repeat: no-repeat;
+  height: 20rem;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.servicios__titulo {
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+.servicios__box {
+  display: flex;
+  justify-content: space-evenly;
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+.servicios__container {
+  border-width: thick;
+  width: 55vh;
+  border-radius: 20%;
+  background-color: rgba(182, 160, 224, 0.1);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+  box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+  margin-bottom: 2rem;
+}
+
+.servicios__icon {
+  width: 3rem;
+}
+
+.servicios__titcontainer {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.servicios__parrafo {
+  text-align: center;
+}
 
 @keyframes slidein {
   from {
-    opacity: 0; }
+    opacity: 0;
+  }
   to {
-    opacity: 1; } }
+    opacity: 1;
+  }
+}
 
 /*ACA TERMINA CSS SERVICIOS*/
-/*CSS NOSOTROS*/
-.nosotros {
-  height: 25rem;
+.contacto__banner {
+  position: relative;
+}
+
+.contacto__img {
   width: 100%;
-  background-image: url("../img/nosotros_header2.jpg");
-  background-repeat: no-repeat;
-  filter: brightness(85%);
-  background-size: cover;
-  color: #ebf0ff;
+}
+
+.contacto__title {
+  position: absolute;
+  width: 35rem;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
+  margin: 3rem;
+}
+
+/*CSS NOSOTROS*/
+.nosotros__head {
+  position: relative;
+}
+
+.nosotros__banner {
+  width: 100%;
+}
+
+.nosotros__titulo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-weight: bolder;
+  margin-bottom: 3rem;
+}
+
+.nosotros__infcenter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+  right: 50%;
+  width: auto;
+}
+
+.nosotros__infoimg {
+  width: 20rem;
+}
+
+.nosotros__titsecundario {
+  width: 25%;
+}
+
+.nosotros__mission {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.nosotros__parrafo {
+  width: 35%;
+  border: 1px solid #01417c;
+  border-radius: 20px;
+  color: black;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+.nosotros__historia {
+  font-size: medium;
+  border: 1px solid #01417c;
+  border-radius: 1rem;
+  padding: 1rem 1rem;
+  box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+}
+
+.nosotros__contacto {
+  background-color: #c4cae0;
+  border-radius: 20px;
+  max-width: 60%;
+  height: 16rem;
+  margin: 4rem auto;
+}
+
+.nosotros__adjunto {
+  border-radius: 10px;
+  width: 15rem;
+  height: 3rem;
+  background-color: #d2dfe7;
+  color: #1a012c;
   font-size: large;
-  display: flex; }
-  .nosotros__head {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; }
-  .nosotros__titulo {
-    width: 50%;
-    margin-top: 5rem; }
-  .nosotros__parrafo {
-    width: 35%;
-    border: 1px solid #01417c;
-    background-color: #6c9aab;
-    border-radius: 20px;
-    color: white;
-    font-weight: bold;
-    padding: 1rem;
-    text-align: center;
-    margin-top: 21rem; }
-  .nosotros__historia {
-    max-width: 40%;
-    margin-top: 2rem;
-    margin-left: 2rem;
-    border: 1px solid #01417c;
-    border-radius: 1rem;
-    padding: 1rem 1rem;
-    box-shadow: 0 0 25px rgba(168, 178, 211, 0.7); }
-  .nosotros__contacto {
-    background-color: rgba(168, 178, 211, 0.7);
-    border-radius: 20px;
-    max-width: 60%;
-    height: 16rem;
-    margin: 4rem auto; }
-  .nosotros__adjunto {
-    border-radius: 10px;
-    width: 15rem;
-    height: 3rem;
-    background-color: rgba(132, 148, 199, 0.7);
-    color: #1a012c;
-    font-size: large;
-    text-align: center;
-    padding-top: 14px; }
+  text-align: center;
+  padding-top: 14px;
+}
 
 /*ACA TERMINA CSS NOSOTROS*/
 /*RESPONSIVE*/
 @media screen and (min-width: 1024px) {
   .hero__titulo {
-    max-width: 100%; }
+    max-width: 100%;
+  }
   .hero__btncontainer {
     width: 50%;
     gap: 50px;
-    padding-left: 0; }
+    padding-left: 0;
+  }
   /*SERVICIOS*/
   .servicios__box {
-    font-size: 19px; }
+    font-size: 19px;
+  }
   .servicios__titcontainer {
-    font-size: 25px; }
+    font-size: 25px;
+  }
   .servicios__icon {
-    width: 5rem; }
+    width: 5rem;
+  }
   /*NOSOTROS*/
   .nosotros__contacto {
     max-width: 70%;
-    height: auto; } }
+    height: auto;
+  }
+}
 
 @media screen and (max-width: 768px) {
   /*INDEX*/
   .hero {
-    font-size: medium; }
+    font-size: medium;
+  }
   .hero__titulo {
-    max-width: 100%; }
+    max-width: 100%;
+  }
   .hero__parrafo {
-    max-width: 100%; }
+    max-width: 100%;
+  }
   .navbar__img {
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+  }
   /*CONTACTANOS*/
+  .form {
+    max-width: 80%;
+  }
   .form__legend {
     margin: 0;
-    font-size: 3rem; }
+    font-size: 3rem;
+  }
   .form__contact {
     max-width: 90%;
-    height: auto; }
+    height: auto;
+  }
   .form_inputs {
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+  }
   .form__input {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
   .form__textarea {
     margin-top: 1rem;
-    width: 60%; }
+    width: 60%;
+  }
   .nosotros__historia {
-    max-width: 50%; }
+    max-width: 50%;
+  }
   .nosotros__contacto {
     max-width: 90%;
-    height: auto; }
+    height: auto;
+  }
   .nosotros__parrafo {
     width: 35%;
     background-color: #6c9aab;
     color: white;
-    margin-top: 19rem; } }
+    margin-top: 19rem;
+  }
+  /*JOBS*/
+  .empleos__bantittle {
+    top: 30%;
+    left: 45%;
+  }
+}
 
 @media screen and (max-width: 425px) {
   /*INDEX*/
   .footer {
-    padding: 5px; }
+    padding: 5px;
+  }
   .footer__container {
-    flex-direction: column; }
+    flex-direction: column;
+  }
   .hero {
     font-size: medium;
     background-image: none;
-    margin-top: 4rem; }
+    height: auto;
+  }
   .hero__titulo {
     max-width: 100%;
-    color: #040c33; }
+    color: black;
+    text-shadow: none;
+  }
   .hero__parrafo {
     max-width: 100%;
     padding-left: 2rem;
-    color: #020c41; }
+    color: black;
+    text-shadow: none;
+  }
+  .hero__div {
+    color: black;
+    text-shadow: none;
+  }
   .hero__btncontainer {
     gap: 25px;
-    padding-left: 10px; }
+    padding-left: 10px;
+  }
   .hero__btn {
     border-radius: 2rem;
     padding: 10px;
     background-color: rgba(168, 178, 211, 0.7);
-    font-size: medium; }
+    font-size: medium;
+  }
   img, svg {
-    width: 65vh; }
+    width: 65vh;
+  }
   .empleos__cuadros {
     grid-template-columns: 350px;
     grid-template-rows: 300px;
-    margin-bottom: 2rem; }
+    margin-bottom: 2rem;
+  }
   .navbar__img {
-    width: 3rem; }
+    width: 3rem;
+  }
   /*SERVICIOS*/
   .servicios__header {
     background-image: none;
     height: 4rem;
-    margin-top: 1rem; }
-  .servicios__titulo {
     margin-top: 1rem;
-    margin-bottom: 4rem; }
+  }
+  .servicios__titulo {
+    color: black;
+    text-shadow: none;
+    text-align: center;
+  }
   .servicios__box {
     flex-direction: column;
     gap: 3rem;
     align-items: center;
-    margin-bottom: 4rem; }
+    margin-bottom: 4rem;
+  }
   .servicios__container {
-    padding: 0; }
-  /*FORM*/
+    padding: 0;
+  }
+  /*FORM - SERVICIOS*/
+  .contacto__title {
+    top: 15%;
+    left: 40%;
+    font-size: 1rem;
+    width: 70%;
+  }
   .form__legend {
     margin: 0;
     text-align: center;
-    font-size: 3rem; }
+    font-size: 2rem;
+  }
   .form__contact {
     max-width: 90%;
-    height: auto; }
+    height: auto;
+  }
   .form_inputs {
     flex-direction: column;
     margin-bottom: 1rem;
-    padding-bottom: 1rem; }
+    padding-bottom: 1rem;
+  }
   .form__textarea {
-    width: 15rem; }
+    width: 15rem;
+  }
   /*JOBS*/
-  .empleos__titulo {
-    text-align: center; }
+  .empleos__bantittle {
+    text-align: center;
+    top: 25%;
+    left: 35%;
+    font-size: 2rem;
+  }
   .empleos__item {
-    align-items: center; }
+    align-items: center;
+  }
   /*NOSOTROS*/
-  .nosotros {
-    background-image: none; }
   .nosotros__titulo {
     width: 100%;
-    color: #6e8d99;
+    color: black;
     text-align: center;
-    margin-top: 1rem; }
+  }
+  .nosotros__infcenter {
+    flex-direction: column;
+  }
+  .nosotros__titsecundario {
+    width: 100%;
+    text-align: center;
+  }
   .nosotros__parrafo {
     width: 100%;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
   .nosotros__historia {
     max-width: 100%;
     margin-left: 0;
-    text-align: center; }
+    text-align: center;
+  }
   .nosotros__contacto {
     background-color: rgba(168, 178, 211, 0.7);
     border-radius: 20px;
     max-width: 90%;
     height: auto;
-    margin: 4rem auto; } }
+    margin: 4rem auto;
+  }
+}
 
 @media screen and (max-width: 320px) {
   /*INDEX*/
   .hero {
-    margin-top: 8rem; }
+    height: auto;
+  }
+  .hero__div {
+    color: black;
+    text-shadow: none;
+  }
   /*SERVICIOS*/
   .servicios__container {
-    width: 50vh; }
+    width: 50vh;
+  }
   .servicios__header {
     background-image: none;
     height: 4rem;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
   /*CONTACTO*/
   .form__contact {
-    width: 90%; }
+    width: 90%;
+  }
   .form_legend {
-    font-size: 40px; }
+    font-size: 40px;
+  }
   /*NOSOTROS*/
-  .nosotros {
-    background-image: none; }
   .nosotros__titulo {
+    color: black;
+    padding-bottom: 1rem;
+  }
+  .nosotros__infcenter {
+    flex-direction: column;
+  }
+  .nosotros__titsecundario {
     width: 100%;
-    color: #6e8d99;
     text-align: center;
-    margin-top: 1rem; }
+  }
+  .nosotros__mission {
+    flex-direction: column;
+  }
   .nosotros__parrafo {
     width: 100%;
-    margin-top: 1rem; }
+    margin-top: 1rem;
+  }
   .nosotros__historia {
     max-width: 100%;
     margin-left: 0;
-    text-align: center; }
+    text-align: center;
+  }
   .nosotros__contacto {
     background-color: #a8b2d3;
     border-radius: 20px;
     max-width: 100%;
     height: auto;
-    margin: 4rem auto; } }
+    margin: 4rem auto;
+  }
+  /*JOBS*/
+  .empleos__bantittle {
+    top: 15%;
+  }
+}

@@ -1,15 +1,15 @@
 /*FORMULARIO CONTACTO*/
 .form{
-    background-color: rgb(146, 167, 243);
+    background-color: $form-bccolor;
     border-radius: 20px;
     max-width: 60%;
     margin: 2rem auto;
-    &_container{
+    &__container{
         display: flex;
         justify-content: space-between;   
     }
     &_inputs{
-        margin: 2rem 2rem;
+        margin: 0 $block-space;
         display: flex;
         gap: 2rem;
         align-items: center;
@@ -18,13 +18,14 @@
     &__legend{
         color: black;
         font-size: 50px;
-        margin: 1rem 1rem;
+        margin: 1rem auto;
+        text-align: center;
     }
     &__input{         
         border-radius: 10px;
         width: 15rem;
         height: 3rem;
-        background-color: #0037ff45;
+        background-color: $form-inputs;
         font-size: large;  
         text-align: center;
         color: black;     
@@ -32,7 +33,7 @@
     &__textarea {
         width: 60%;
         border-radius: 10px;
-        background-color: #0037ff45;
+        background-color: $form-inputs;
         font-size: large;
         color: black; 
         padding: 15px;

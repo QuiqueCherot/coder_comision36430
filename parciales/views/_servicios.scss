@@ -6,7 +6,7 @@
      display: flex;
      flex-direction: column;   
      &__header{
-        background-image: url(/img/banner_servicios.jpg);
+        background-image: url(../img/banner_servicios.jpg);
         background-repeat: no-repeat;
         height: 20rem;
         background-size: cover;
@@ -16,7 +16,8 @@
         justify-content: center;
      }
      &__titulo{
-        color: black;
+        color: white;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
      }
      &__box{
  

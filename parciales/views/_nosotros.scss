@@ -1,47 +1,60 @@
 /*CSS NOSOTROS*/
 
 .nosotros{
-    height: 25rem;
-    width: 100%; 
-    background-image: url('../img/nosotros_header2.jpg'); 
-    background-repeat: no-repeat;
-    filter: brightness(85%);
-    background-size: cover;
-    color: rgb(235, 240, 255);
-    font-size: large;
-    display: flex;
+        
     &__head{
-        display: flex;
-        justify-content: space-around;
-        flex-wrap: wrap;
+        position: relative;
+    }
+    &__banner{
+        width: 100%;
     }
     &__titulo{
-        width: 50%;
-        margin-top: 5rem;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+        font-weight: bolder;
+        margin-bottom: $block-space;
+    }
+    &__infcenter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: $block-space;
+        right: 50%;
+        width: auto;
+    }
+    &__infoimg{
+        width: 20rem;
+    }
+    &__titsecundario{
+        width: 25%;
+    }
+    &__mission{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: $block-space;
     }
     &__parrafo{  
         width: 35%;
         border: 1px solid rgb(1, 65, 124);
-        background-color: #6c9aab;
         border-radius: 20px;
-        color: white;
-        font-weight: bold;
-        padding: 1rem;
+        color: black;
         text-align: center;
-        margin-top: 21rem;
+        padding: 5px 5px;
     }
     &__historia{
-    
-        max-width: 40%;
-        margin-top: 2rem;
-        margin-left: 2rem;
+        font-size: medium;
         border: 1px solid  rgb(1, 65, 124);
         border-radius: 1rem;
         padding: 1rem 1rem;
         box-shadow: 0 0 25px  rgba(168, 178, 211, 0.7);     
     }   
     &__contacto{
-        background-color: rgba(168, 178, 211, 0.7);
+        background-color: $form-bccolor;
         border-radius: 20px;
         max-width: 60%;
         height: 16rem;
@@ -51,7 +64,7 @@
         border-radius: 10px;
         width: 15rem;
         height: 3rem;
-        background-color: rgba(132, 148, 199, 0.7);
+        background-color: $form-inputs;
         color: rgb(26, 1, 44);
         font-size: large;  
         text-align: center;
