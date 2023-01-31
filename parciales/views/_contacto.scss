@@ -1,19 +1,6 @@
-.contacto{
-    &__banner{
-        position: relative;       
-    }      
-    &__img{
-        width: 100%;
-    }
+.contacto{    
     &__title{
-        position: absolute;
-        width: 35rem;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-        font-weight: bolder;
         margin: $block-space;
+        @include titulo;
     }
 }

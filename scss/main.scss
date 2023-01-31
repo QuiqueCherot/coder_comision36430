@@ -1,10 +1,13 @@
-@import "../parciales/vars";
+@import "../parciales/utilities/vars";
+@import "../parciales/utilities/mixins";
+@import "../parciales/utilities/functions";
 @import "../parciales/base/reset";
 @import "../parciales/layout/navbar";
 @import "../parciales/layout/footer";
 @import "../parciales/layout/form";
 @import "../parciales/views/home";
+@import "../parciales/views/jobs";
 @import "../parciales/views/servicios";
 @import "../parciales/views/contacto";
 @import "../parciales/views/nosotros";
-@import "../parciales/responsive";
+@import "../parciales/base/responsive";

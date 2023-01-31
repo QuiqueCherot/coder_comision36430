@@ -1,28 +1,19 @@
 /*ACA EMPIEZA HERO*/
 .hero{
-    height: 30rem;
-    width: 100%;      
-    background-image: url(../img/fondo_hero.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    color: white;
-    font-size: large;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     gap: 2rem;
-    padding-bottom: $block-space;
-    margin-bottom: $block-space;
+    padding: $block-space;
     background-position-y: center;
     filter: hue-rotate(45deg);
     &__titulo{
-        max-width: 50%;
-        padding-left: 2rem;  
-        text-shadow: 0 0 15px rgb(0, 0, 0);  
+        padding-left: 2rem; 
+        @include titulo; 
     }    
     &__parrafo{
         padding-left: 2rem;
-        text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+        @include brief;
     }    
     &__div{
         color: white;
@@ -59,69 +50,3 @@
 }
 
 /*TERMINA CAROUSEL*/
-/*ACA EMPIEZA EMPLEOS*/
-.empleos{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    &__banner{
-        position: relative;
-        margin-bottom: $block-space
-    }
-    &__img{
-        width: 100%;
-    }
-    &__bantittle{
-        position: absolute;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        color: white;
-        text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-        font-weight: bolder;
-        margin: $block-space;
-    }
-    &__titulo{
-        margin: $block-space;
-        font-family: sans-serif;
-    }    
-    &__cuadros{
-        display: grid;
-        grid-template-columns: 350px 350px;
-        grid-template-rows: 300px 300px 300px;
-        gap: 1rem;
-    }  
-    &__contenido{
-        list-style: none;
-        margin: 5px;
-    }  
-    &__item{    
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding: 1rem;
-        margin: 1rem;
-        border: 1px solid black;
-        border-radius: 10px;
-        box-shadow: 0px 0px 20px $base-color;
-    } 
-    &__nombreposicion{
-        text-align: center;
-    }   
-    &__input{
-            border-radius: 10px;
-            width: 8rem;
-            height: 2rem;
-            background-color: #6c6969;
-            color: white;
-            font-size: large;  
-            text-align: center;
-            align-self: center;
-            &:hover{
-                background-color: $base-color;
-            }
-    }    
-}
-
-/*ACA TERMINA EMPLEOS*/

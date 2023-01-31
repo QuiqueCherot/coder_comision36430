@@ -1,0 +1,59 @@
+/*ACA EMPIEZA EMPLEOS*/
+.empleos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    &__banner{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    &__bantittle{
+        font-weight: bolder;
+        margin: $block-space;
+        @include titulo;
+    }
+    &__titulo{
+        margin: $block-space;
+        font-family: sans-serif;
+    }    
+    &__cuadros{
+        display: grid;
+        grid-template-columns: 350px 350px;
+        grid-template-rows: 300px 300px 300px;
+        gap: 1rem;
+    }  
+    &__contenido{
+        list-style: none;
+        margin: 5px;
+    }  
+    &__item{    
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 1rem;
+        margin: 1rem;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0px 0px 20px $base-color;
+    } 
+    &__nombreposicion{
+        text-align: center;
+    }   
+    &__input{
+            border-radius: 10px;
+            width: 8rem;
+            height: 2rem;
+            background-color: #6c6969;
+            color: white;
+            font-size: large;  
+            text-align: center;
+            align-self: center;
+            &:hover{
+                background-color: $base-color;
+            }
+    }    
+}
+
+/*ACA TERMINA EMPLEOS*/

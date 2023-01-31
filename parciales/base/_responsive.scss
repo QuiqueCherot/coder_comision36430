@@ -14,16 +14,16 @@
 
     /*SERVICIOS*/
 
-    .servicios__box {
-        font-size: 19px;
-    }
-
-    .servicios__titcontainer{
-        font-size: 25px;
-    }
-
-    .servicios__icon{
-        width: 5rem;
+    .servicios{
+        &__box {
+            font-size: 19px;
+        }
+        &__titcontainer{
+            font-size: 25px;
+        }
+        &__icon{
+            width: 5rem;
+        }
     }
 
     /*NOSOTROS*/
@@ -32,25 +32,27 @@
         max-width: 70%;
         height: auto;
     }
-    
+
+    /*CONTACTO*/
+    .contacto__title{
+        background-position-x: right;
+    }    
 }
 
 @media screen and (max-width: 768px){
     
     /*INDEX*/
     .hero{
-        font-size: medium;
-     
-    }
-
-    .hero__titulo{
-        max-width: 100%;
-    
-    }
-    
-    .hero__parrafo{
-        max-width: 100%;
-    }
+        &__titulo{
+            max-width: 100%;
+            font-size: 2rem;
+        
+        }
+        
+        &__parrafo{
+            max-width: 100%;
+        }
+    }    
 
     .navbar__img {
         margin-bottom: 2rem;
@@ -80,31 +82,31 @@
         }
     }
 
-    
-    
-    .nosotros__historia{
-
-        max-width: 50%;
+    .banner__contacto{
+        height: 20rem;
+    }
+    .contacto__title{
+        font-size: 2rem;
     }
 
-    .nosotros__contacto{
-        max-width: 90%;
-        height: auto;
-    }
+    /*NOSOTROS*/
+    .nosotros{
+        &__historia{
+            max-width: 100%;
 
-    .nosotros__parrafo {
-        width: 35%;
-        background-color: #6c9aab;
-        color: white;
-        margin-top: 19rem;
-    }
-
-    /*JOBS*/
-    .empleos{
-        &__bantittle{
-            top: 30%;
-            left: 45%;
         }
+        &__contacto{
+            max-width: 90%;
+            height: auto;
+        }
+        &__parrafo {
+            width: 35%;
+            background-color: #6c9aab;
+            color: white;
+        }
+    }
+    .banner__nosotros{
+        height: 20rem;
     }
 
 }
@@ -123,6 +125,7 @@
     .hero{
         font-size: medium;
         background-image: none;
+        text-align: center;
         height: auto;
         &__titulo{
             max-width: 100%;
@@ -138,6 +141,7 @@
         &__div{
             color: black;
             text-shadow: none;
+            width: 90%;
         }  
         &__btncontainer{    
             gap: 25px;
@@ -158,11 +162,24 @@
         width: 65vh;
     }
 
-    .empleos__cuadros{
-        grid-template-columns: 350px;
-        grid-template-rows: 300px;
-        margin-bottom: 2rem;
+    /*JOBS*/
+
+    .empleos{
+        &__cuadros{
+            grid-template-columns: 350px;
+            grid-template-rows: 300px;
+            margin-bottom: 2rem;
+        }
+        &__bantittle{
+            text-shadow: none;
+            color: black;
+        }
     }
+    .banner__job{
+        background-image: none;
+        height: 5rem;
+    }
+   
 
     .navbar__img {
         width: 3rem;
@@ -170,37 +187,43 @@
 
     /*SERVICIOS*/
 
-    .servicios__header{
-        background-image: none;
-        height: 4rem;
-        margin-top: 1rem;
+    .servicios{
+        &__header{
+            background-image: none;
+            height: 4rem;
+            margin-top: 1rem;
+        }    
+        &__titulo{
+            color: black;
+            font-size: 2rem;
+            text-shadow: none;
+            text-align: center;
+        }
+        &__box {
+            flex-direction: column;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+        &__container{
+            padding: 0;            
+        }
     }
     
-    .servicios__titulo{
-        color: black;
-        text-shadow: none;
-        text-align: center;
-    }
 
-    .servicios__box {
-        flex-direction: column;
-        gap: 3rem;
-        align-items: center;
-        margin-bottom: 4rem;
-    }
-
-    .servicios__container{
-        padding: 0;
-        
-    }
-
-    /*FORM - SERVICIOS*/
+    /*FORM - CONTACTO*/
 
     .contacto__title{
-        top: 15%;
-        left: 40%;
-        font-size: 1rem;
-        width: 70%;
+        font-size: 2rem;
+        width: 100%;
+        margin: 0;
+        text-shadow: none;
+        color: black;
+        text-align: center;
+    }
+    .banner__contacto{
+        background-image: none;
+        height: 4rem;
     }
 
     .form{
@@ -242,9 +265,9 @@
 
     .nosotros{
         &__titulo{
-            width: 100%;
             color: black;
             text-align: center;
+            text-shadow: none;
         }
         &__infcenter{
             flex-direction: column;
@@ -270,6 +293,10 @@
             margin: 4rem auto;
         }
     }
+    .banner__nosotros{
+        background-image: none;
+        height: 16rem;
+    }
     
 
 }
@@ -278,7 +305,8 @@
     
     /*INDEX*/
     .hero{
-     height: auto;   
+     height: auto; 
+     text-align: inherit;  
         &__div{
             color: black;
             text-shadow: none;
@@ -288,24 +316,33 @@
 
     /*SERVICIOS*/
 
-    .servicios__container{
-        width: 50vh;
+    .servicios{
+        &__titulo{
+            font-size: 2rem;
+        }
+        &__container{
+            width: 50vh;
+        }
+        &__header{
+            background-image: none;
+            height: 4rem;
+            margin-top: 1rem;
+        }
     }
 
-    .servicios__header{
-        background-image: none;
-        height: 4rem;
-        margin-top: 1rem;
-    }
 
     /*CONTACTO*/
 
-    .form__contact{
-        width: 90%;
+    .form{
+        &__contact{
+            width: 90%;
+        }
+        &_legend{
+            font-size: 40px;
+        }
     }
-    .form_legend{
-        font-size: 40px;
-    }
+
+    
 
     /*NOSOTROS*/
 

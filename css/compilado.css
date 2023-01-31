@@ -1,6 +1,75 @@
 @charset "UTF-8";
+/*ACA COMIENZA VARIABLES*/
 /* COLORS*/
-/*BLOCK SPACING*/
+/*SPACING*/
+/*ACA TERMINAN VARIABLES*/
+/*ACA COMIENZA MIXIN*/
+/*TEXTO HEADER*/
+/*BUTTONS*/
+/*ACA TERMINA MIXINS*/
+/*ACA COMIENZAN LAS FUNCTIONS*/
+/*BANNER - HEADER */
+.banner__home {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner_home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__servicios {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner_servicios.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__job {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner_job.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__contacto {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner_contacto.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner__nosotros {
+  width: 100%;
+  height: 30rem;
+  background-image: url("../img/banner_nosotros.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*ACA TERMINAN LAS FUNCTIONS*/
 * {
   margin: 0;
   padding: 0;
@@ -156,32 +225,27 @@
 /*ACA TERMINA FORM CONTACTO*/
 /*ACA EMPIEZA HERO*/
 .hero {
-  height: 30rem;
-  width: 100%;
-  background-image: url(../img/fondo_hero.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  color: white;
-  font-size: large;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   gap: 2rem;
-  padding-bottom: 3rem;
-  margin-bottom: 3rem;
+  padding: 3rem;
   background-position-y: center;
   filter: hue-rotate(45deg);
 }
 
 .hero__titulo {
-  max-width: 50%;
   padding-left: 2rem;
+  color: white;
+  font-size: 3rem;
   text-shadow: 0 0 15px black;
 }
 
 .hero__parrafo {
   padding-left: 2rem;
-  text-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  color: white;
+  font-size: 1rem;
+  text-shadow: 0 0 15px black;
 }
 
 .hero__div {
@@ -231,23 +295,17 @@
 }
 
 .empleos__banner {
-  position: relative;
-  margin-bottom: 3rem;
-}
-
-.empleos__img {
-  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .empleos__bantittle {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
   font-weight: bolder;
   margin: 3rem;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 15px black;
 }
 
 .empleos__titulo {
@@ -306,11 +364,6 @@
 }
 
 .servicios__header {
-  background-image: url(../img/banner_servicios.jpg);
-  background-repeat: no-repeat;
-  height: 20rem;
-  background-size: cover;
-  margin-bottom: 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -318,7 +371,8 @@
 
 .servicios__titulo {
   color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  font-size: 3rem;
+  text-shadow: 0 0 15px black;
 }
 
 .servicios__box {
@@ -365,44 +419,23 @@
 }
 
 /*ACA TERMINA CSS SERVICIOS*/
-.contacto__banner {
-  position: relative;
-}
-
-.contacto__img {
-  width: 100%;
-}
-
 .contacto__title {
-  position: absolute;
-  width: 35rem;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  font-weight: bolder;
   margin: 3rem;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 15px black;
 }
 
 /*CSS NOSOTROS*/
-.nosotros__head {
-  position: relative;
-}
-
-.nosotros__banner {
-  width: 100%;
-}
-
 .nosotros__titulo {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  font-weight: bolder;
   margin-bottom: 3rem;
+  color: white;
+  font-size: 3rem;
+  text-shadow: 0 0 15px black;
 }
 
 .nosotros__infcenter {
@@ -412,14 +445,23 @@
   margin-top: 3rem;
   right: 50%;
   width: auto;
+  overflow: hidden;
+}
+
+.nosotros__informacion {
+  overflow: hidden;
 }
 
 .nosotros__infoimg {
   width: 20rem;
+  margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .nosotros__titsecundario {
   width: 25%;
+  margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .nosotros__mission {
@@ -427,6 +469,7 @@
   justify-content: center;
   align-items: center;
   margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .nosotros__parrafo {
@@ -436,6 +479,8 @@
   color: black;
   text-align: center;
   padding: 5px 5px;
+  margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .nosotros__historia {
@@ -444,6 +489,8 @@
   border-radius: 1rem;
   padding: 1rem 1rem;
   box-shadow: 0 0 25px rgba(168, 178, 211, 0.7);
+  margin-bottom: 3rem;
+  overflow: hidden;
 }
 
 .nosotros__contacto {
@@ -491,15 +538,17 @@
     max-width: 70%;
     height: auto;
   }
+  /*CONTACTO*/
+  .contacto__title {
+    background-position-x: right;
+  }
 }
 
 @media screen and (max-width: 768px) {
   /*INDEX*/
-  .hero {
-    font-size: medium;
-  }
   .hero__titulo {
     max-width: 100%;
+    font-size: 2rem;
   }
   .hero__parrafo {
     max-width: 100%;
@@ -529,8 +578,15 @@
     margin-top: 1rem;
     width: 60%;
   }
+  .banner__contacto {
+    height: 20rem;
+  }
+  .contacto__title {
+    font-size: 2rem;
+  }
+  /*NOSOTROS*/
   .nosotros__historia {
-    max-width: 50%;
+    max-width: 100%;
   }
   .nosotros__contacto {
     max-width: 90%;
@@ -540,12 +596,9 @@
     width: 35%;
     background-color: #6c9aab;
     color: white;
-    margin-top: 19rem;
   }
-  /*JOBS*/
-  .empleos__bantittle {
-    top: 30%;
-    left: 45%;
+  .banner__nosotros {
+    height: 20rem;
   }
 }
 
@@ -560,6 +613,7 @@
   .hero {
     font-size: medium;
     background-image: none;
+    text-align: center;
     height: auto;
   }
   .hero__titulo {
@@ -576,6 +630,7 @@
   .hero__div {
     color: black;
     text-shadow: none;
+    width: 90%;
   }
   .hero__btncontainer {
     gap: 25px;
@@ -590,10 +645,19 @@
   img, svg {
     width: 65vh;
   }
+  /*JOBS*/
   .empleos__cuadros {
     grid-template-columns: 350px;
     grid-template-rows: 300px;
     margin-bottom: 2rem;
+  }
+  .empleos__bantittle {
+    text-shadow: none;
+    color: black;
+  }
+  .banner__job {
+    background-image: none;
+    height: 5rem;
   }
   .navbar__img {
     width: 3rem;
@@ -606,6 +670,7 @@
   }
   .servicios__titulo {
     color: black;
+    font-size: 2rem;
     text-shadow: none;
     text-align: center;
   }
@@ -618,12 +683,18 @@
   .servicios__container {
     padding: 0;
   }
-  /*FORM - SERVICIOS*/
+  /*FORM - CONTACTO*/
   .contacto__title {
-    top: 15%;
-    left: 40%;
-    font-size: 1rem;
-    width: 70%;
+    font-size: 2rem;
+    width: 100%;
+    margin: 0;
+    text-shadow: none;
+    color: black;
+    text-align: center;
+  }
+  .banner__contacto {
+    background-image: none;
+    height: 4rem;
   }
   .form__legend {
     margin: 0;
@@ -654,9 +725,9 @@
   }
   /*NOSOTROS*/
   .nosotros__titulo {
-    width: 100%;
     color: black;
     text-align: center;
+    text-shadow: none;
   }
   .nosotros__infcenter {
     flex-direction: column;
@@ -681,18 +752,26 @@
     height: auto;
     margin: 4rem auto;
   }
+  .banner__nosotros {
+    background-image: none;
+    height: 16rem;
+  }
 }
 
 @media screen and (max-width: 320px) {
   /*INDEX*/
   .hero {
     height: auto;
+    text-align: inherit;
   }
   .hero__div {
     color: black;
     text-shadow: none;
   }
   /*SERVICIOS*/
+  .servicios__titulo {
+    font-size: 2rem;
+  }
   .servicios__container {
     width: 50vh;
   }

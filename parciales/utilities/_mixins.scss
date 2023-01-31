@@ -1,0 +1,19 @@
+/*ACA COMIENZA MIXIN*/
+
+/*TEXTO HEADER*/
+
+@mixin titulo{
+    color: white;
+    font-size: 3rem;
+    text-shadow: 0 0 15px rgb(0, 0, 0); 
+}
+
+@mixin brief{
+    color: white;
+    font-size: 1rem;
+    text-shadow: 0 0 15px rgb(0, 0, 0); 
+}
+
+/*BUTTONS*/
+
+/*ACA TERMINA MIXINS*/
