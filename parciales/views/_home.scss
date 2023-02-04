@@ -1,12 +1,9 @@
 /*ACA EMPIEZA HERO*/
 .hero{
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
     gap: 2rem;
     padding: $block-space;
     background-position-y: center;
-    filter: hue-rotate(45deg);
     &__titulo{
         padding-left: 2rem; 
         @include titulo; 

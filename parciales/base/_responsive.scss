@@ -15,6 +15,9 @@
     /*SERVICIOS*/
 
     .servicios{
+        &__container{
+            width: 65vh;
+        }
         &__box {
             font-size: 19px;
         }
@@ -124,23 +127,19 @@
 
     .hero{
         font-size: medium;
-        background-image: none;
         text-align: center;
-        height: auto;
+        background-position: center;
+        background-size: cover;
+        justify-content:center;
         &__titulo{
             max-width: 100%;
-            color:black;
-            text-shadow: none;
         }    
         &__parrafo{
-            max-width: 100%;
-            padding-left: 2rem;
-            color: black ;
-            text-shadow: none;
+            opacity: 0;
+            height: 0;
+           
         }  
         &__div{
-            color: black;
-            text-shadow: none;
             width: 90%;
         }  
         &__btncontainer{    
@@ -163,7 +162,7 @@
     }
 
     /*JOBS*/
-
+        
     .empleos{
         &__cuadros{
             grid-template-columns: 350px;
@@ -173,6 +172,13 @@
         &__bantittle{
             text-shadow: none;
             color: black;
+            text-align: center;
+            top: 25%;
+            left: 35%;
+            font-size: 2rem;
+        }
+        &__item{
+            align-items: center;
         }
     }
     .banner__job{
@@ -233,7 +239,7 @@
             font-size: 2rem;
         }    
         &__contact{
-            max-width: 90%;
+            max-width: 95%;
             height: auto;
         }    
         &_inputs{
@@ -243,20 +249,6 @@
         }    
         &__textarea{
             width: 15rem;
-        }
-    }
-    
-    
-    /*JOBS*/
-    .empleos{
-        &__bantittle{
-            text-align: center;
-            top: 25%;
-            left: 35%;
-            font-size: 2rem;
-        }
-        &__item{
-            align-items: center;
         }
     }
     
@@ -276,14 +268,18 @@
             width: 100%;
             text-align: center;
         }
+        &__mission{
+            flex-direction: column;
+        }
         &__parrafo{
             width: 100%;
             margin-top: 1rem;
         }
         &__historia{
-            max-width: 100%;
+            max-width: 80%;
             margin-left: 0;
             text-align: center;
+            margin: auto;
         }
         &__contacto{
             background-color: rgba(168, 178, 211, 0.7);
@@ -306,11 +302,9 @@
     /*INDEX*/
     .hero{
      height: auto; 
+     padding: 0;
+     padding-top: 2rem;
      text-align: inherit;  
-        &__div{
-            color: black;
-            text-shadow: none;
-        }
     }
 
 
@@ -321,12 +315,13 @@
             font-size: 2rem;
         }
         &__container{
-            width: 50vh;
+            width: 55vh;
         }
         &__header{
             background-image: none;
             height: 4rem;
             margin-top: 1rem;
+            padding: 1rem;
         }
     }
 
@@ -335,7 +330,7 @@
 
     .form{
         &__contact{
-            width: 90%;
+            width: 95%;
         }
         &_legend{
             font-size: 40px;
@@ -353,21 +348,27 @@
         }
         &__infcenter{
             flex-direction: column;
+            align-items: center;
+            width: 95%;
         }
         &__titsecundario{
-            width: 100%;
+            width: 95%;
             text-align: center;
         }
         &__mission{
             flex-direction: column;
         }
+        &__missionimg{
+            width: 95%;
+        }
         &__parrafo{
-            width: 100%;
+            width: 95%;
             margin-top: 1rem;
         }
         &__historia{
-            max-width: 100%;
+            max-width: 80%;
             margin-left: 0;
+            margin: auto;
             text-align: center;
         }
         &__contacto{
