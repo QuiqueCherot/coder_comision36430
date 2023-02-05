@@ -95,7 +95,7 @@
     /*NOSOTROS*/
     .nosotros{
         &__historia{
-            max-width: 100%;
+            max-width: 80%;
 
         }
         &__contacto{
@@ -260,9 +260,11 @@
             color: black;
             text-align: center;
             text-shadow: none;
+            margin-bottom: 0;
         }
         &__infcenter{
             flex-direction: column;
+            margin-top: 0;
         }
         &__titsecundario{
             width: 100%;
@@ -291,7 +293,7 @@
     }
     .banner__nosotros{
         background-image: none;
-        height: 16rem;
+        height: 8rem;
     }
     
 
@@ -377,8 +379,10 @@
             max-width: 100%;
             height: auto;
             margin: 4rem auto;
+        }   
     }
-    
+    .banner__nosotros{
+        height: 8rem;
     }
 
     /*JOBS*/

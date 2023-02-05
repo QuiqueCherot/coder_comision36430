@@ -1,7 +1,7 @@
 /*FORMULARIO CONTACTO*/
 .form{
     background-color: $form-bccolor;
-    border-radius: 20px;
+    border-radius: $border;
     max-width: 60%;
     margin: 2rem auto;
     &__container{
@@ -22,7 +22,7 @@
         text-align: center;
     }
     &__input{         
-        border-radius: 10px;
+        border-radius: $border;
         width: 15rem;
         height: 3rem;
         background-color: $form-inputs;
@@ -32,7 +32,7 @@
     }
     &__textarea {
         width: 60%;
-        border-radius: 10px;
+        border-radius: $border;
         background-color: $form-inputs;
         font-size: large;
         color: black; 
