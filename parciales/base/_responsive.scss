@@ -136,16 +136,8 @@
         }    
         &__parrafo{
             opacity: 0;
-            height: 0;
-           
+            height: 0;           
         }  
-        &__div{
-            width: 90%;
-        }  
-        &__btncontainer{    
-            gap: 25px;
-            padding-left: 10px;            
-        }    
         &__btn{        
             border-radius: 2rem;
             padding: 10px;
@@ -153,6 +145,15 @@
             font-size:medium;               
         }
      
+    }
+    .presentation{
+        &__container{
+            flex-direction: column;
+        }
+    }
+
+    .about{
+        grid-template-columns: 1fr;
     }
 
     

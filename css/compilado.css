@@ -84,6 +84,11 @@
 }
 
 /*ACA COMIENZA NAVBAR*/
+.navbar {
+  background-color: rgba(0, 0, 0, 0);
+  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
 .navbar__logo {
   justify-content: space-between;
 }
@@ -95,11 +100,15 @@
 .navbar__text {
   font-family: 'Kaushan Script', cursive;
   font-size: 2rem;
-  color: black;
+  color: #fff;
+}
+
+.navbar__text:hover {
+  color: #01838f;
 }
 
 .navbar__prop {
-  color: black;
+  color: #fff;
   font-weight: 500;
   background-image: linear-gradient(currentColor, currentColor);
   background-position: 1% 100%;
@@ -237,65 +246,168 @@
 
 /*ACA TERMINA FORM CONTACTO*/
 /*ACA EMPIEZA HERO*/
+.conteiner {
+  overflow: hidden;
+  max-width: 1200px;
+}
+
 .hero {
-  justify-content: flex-end;
-  gap: 2rem;
-  padding: 3rem;
-  background-position-y: center;
+  height: auto;
+  background-image: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  position: relative;
+}
+
+.hero__container {
+  display: flex;
+  align-items: flex-start;
+  color: white;
+  gap: 1rem;
 }
 
 .hero__titulo {
   padding-left: 2rem;
   color: white;
-  font-size: 3rem;
+  font-size: 3.2em;
   text-shadow: 0 0 15px black;
 }
 
 .hero__parrafo {
   padding-left: 2rem;
   color: white;
-  font-size: 1rem;
+  font-size: 2em;
   text-shadow: 0 0 15px black;
 }
 
-.hero__div {
-  color: white;
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
-  width: 60%;
-  background-color: rgba(0, 0, 0, 0);
-  border: 2px white;
-  border-top-style: solid;
-  border-right-style: hidden;
-  border-bottom-style: solid;
-  border-left-style: hidden;
+.hero__cta {
+  background-color: #fff;
+  color: black;
+  padding: 1rem 3rem;
   border-radius: 20px;
+  align-self: center;
+  text-decoration: none;
 }
 
-.hero__divbtn {
-  background-color: #6c6969;
-  border-color: #6c6969;
-}
-
-.hero__divbtn:hover {
+.hero__cta:hover {
   background-color: #01838f;
-  border-color: #01838f;
+  color: white;
+}
+
+.hero__wave {
+  position: absolute;
+  padding-top: 2rem;
+  bottom: 0;
+  width: 100%;
+  height: 100px;
 }
 
 /*ACA TERMINA HERO*/
-/* INICIA CAROUSEL*/
-.carrousel {
+/*ACA COMIENZA PRESENTATION*/
+.presentation {
   display: flex;
-  justify-content: space-evenly;
-  margin: 5rem 5rem;
-  max-width: 100%;
+  flex-direction: column;
+  margin-bottom: 3rem;
+  gap: 2rem;
 }
 
-.carrousel__img {
-  width: 70%;
-  height: 70%;
+.presentation__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
 }
 
-/*TERMINA CAROUSEL*/
+.presentation__texts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+  text-align: center;
+}
+
+.presentation__img {
+  width: 30rem;
+}
+
+/*ACA TERMINA PRESENTATION*/
+/*ACA INICIA ABOUT*/
+.about {
+  background-color: #f2f2f2;
+  margin-bottom: 3rem;
+  padding: 1rem;
+}
+
+.about__grid {
+  display: grid;
+  height: 550px;
+  grid-template-areas: "img1 img1 img2 img3" "img1 img1 img4 img5";
+  gap: 10px;
+}
+
+.about__item {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.about__item:nth-of-type(1) {
+  grid-area: img1;
+}
+
+.about__item:nth-of-type(2) {
+  grid-area: img2;
+}
+
+.about__item:nth-of-type(3) {
+  grid-area: img3;
+}
+
+.about__item:nth-of-type(4) {
+  grid-area: img4;
+}
+
+.about__item:nth-of-type(5) {
+  grid-area: img5;
+}
+
+.about__item:hover .about__hover {
+  transform: translateX(0%);
+  color: black;
+}
+
+.about__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.about__hover {
+  position: absolute;
+  background: #01838fa3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transform: translateX(100%);
+  transition: transform 1s;
+  cursor: pointer;
+}
+
+.about__icon {
+  margin-top: 10px;
+  font-size: 30px;
+}
+
+/*ACA TERMINA ABOUT*/
 /*ACA EMPIEZA EMPLEOS*/
 .empleos {
   display: flex;
@@ -313,7 +425,7 @@
   font-weight: bolder;
   margin: 3rem;
   color: white;
-  font-size: 3rem;
+  font-size: 3.2em;
   text-shadow: 0 0 15px black;
 }
 
@@ -374,7 +486,7 @@
 
 .servicios__titulo {
   color: white;
-  font-size: 3rem;
+  font-size: 3.2em;
   text-shadow: 0 0 15px black;
 }
 
@@ -429,7 +541,7 @@
 .contacto__title {
   margin: 3rem;
   color: white;
-  font-size: 3rem;
+  font-size: 3.2em;
   text-shadow: 0 0 15px black;
 }
 
@@ -442,7 +554,7 @@
   position: absolute;
   margin-bottom: 3rem;
   color: white;
-  font-size: 3rem;
+  font-size: 3.2em;
   text-shadow: 0 0 15px black;
 }
 
@@ -635,18 +747,17 @@
     opacity: 0;
     height: 0;
   }
-  .hero__div {
-    width: 90%;
-  }
-  .hero__btncontainer {
-    gap: 25px;
-    padding-left: 10px;
-  }
   .hero__btn {
     border-radius: 2rem;
     padding: 10px;
     background-color: rgba(168, 178, 211, 0.7);
     font-size: medium;
+  }
+  .presentation__container {
+    flex-direction: column;
+  }
+  .about {
+    grid-template-columns: 1fr;
   }
   img, svg {
     width: 65vh;

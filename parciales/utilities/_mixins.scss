@@ -4,13 +4,13 @@
 
 @mixin titulo{
     color: white;
-    font-size: 3rem;
+    font-size: 3.2em;
     text-shadow: 0 0 15px rgb(0, 0, 0); 
 }
 
 @mixin brief{
     color: white;
-    font-size: 1rem;
+    font-size: 2em;
     text-shadow: 0 0 15px rgb(0, 0, 0); 
 }
 

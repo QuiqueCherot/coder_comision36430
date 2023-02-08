@@ -1,6 +1,8 @@
 /*ACA COMIENZA NAVBAR*/
+
 .navbar {
-  
+    background-color: rgba(0,0,0,0); 
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
     &__logo{
     justify-content: space-between;
     }
@@ -10,10 +12,13 @@
     &__text{
         font-family: 'Kaushan Script', cursive;
         font-size: 2rem;
-        color: black;
+        color: #fff;
+        &:hover{
+            color: $base-color;
+        }
     }
     &__prop {
-        color: black;
+        color: #fff;
         font-weight:500;
         background-image: linear-gradient(currentColor, currentColor);
         background-position: 1% 100%;
