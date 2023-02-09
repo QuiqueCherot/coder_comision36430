@@ -86,7 +86,7 @@
 /*ACA COMIENZA NAVBAR*/
 .navbar {
   background-color: rgba(0, 0, 0, 0);
-  text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+  text-shadow: 0 0 8px black;
 }
 
 .navbar__logo {
@@ -186,6 +186,10 @@
 
 .footer_box a .fa-brands {
   font-size: 20px;
+}
+
+.navbar__text-footer {
+  color: black;
 }
 
 /*ACA TERMINA FOOTER*/
@@ -299,7 +303,7 @@
 .hero__wave {
   position: absolute;
   padding-top: 2rem;
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
   height: 100px;
 }
@@ -376,7 +380,11 @@
 
 .about__item:hover .about__hover {
   transform: translateX(0%);
-  color: black;
+  color: #093438;
+}
+
+.about__title {
+  text-align: center;
 }
 
 .about__img {
@@ -679,6 +687,9 @@
   .navbar__img {
     margin-bottom: 2rem;
   }
+  .presentation {
+    padding: 1rem;
+  }
   /*CONTACTANOS*/
   .form {
     max-width: 80%;
@@ -756,8 +767,14 @@
   .presentation__container {
     flex-direction: column;
   }
-  .about {
-    grid-template-columns: 1fr;
+  .presentation__texts {
+    width: 80%;
+  }
+  .presentation__img {
+    width: 20rem;
+  }
+  .about__grid {
+    grid-template-areas: "img1" "img1" "img1" "img1" "img1" "img2" "img2" "img3" "img3" "img4" "img4" "img5" "img5";
   }
   img, svg {
     width: 65vh;
@@ -778,6 +795,9 @@
   }
   .empleos__item {
     align-items: center;
+  }
+  .empleos__titulo {
+    margin: auto;
   }
   .banner__job {
     background-image: none;

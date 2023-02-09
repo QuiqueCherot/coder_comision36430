@@ -48,10 +48,8 @@
     .hero{
         &__titulo{
             max-width: 100%;
-            font-size: 2rem;
-        
-        }
-        
+            font-size: 2rem;        
+        }        
         &__parrafo{
             max-width: 100%;
         }
@@ -59,6 +57,10 @@
 
     .navbar__img {
         margin-bottom: 2rem;
+    }
+
+    .presentation{
+        padding: 1rem;
     }
 
     /*CONTACTANOS*/
@@ -150,10 +152,31 @@
         &__container{
             flex-direction: column;
         }
+        &__texts{
+            width: 80%;
+        }
+        &__img{
+            width: 20rem;
+        }
     }
 
     .about{
-        grid-template-columns: 1fr;
+        &__grid{
+            grid-template-areas: 
+            "img1"
+            "img1"
+            "img1"
+            "img1"
+            "img1"
+            "img2"
+            "img2"
+            "img3"
+            "img3"
+            "img4"
+            "img4"
+            "img5"
+            "img5";
+        }
     }
 
     
@@ -180,6 +203,9 @@
         }
         &__item{
             align-items: center;
+        }
+        &__titulo{
+            margin: auto;
         }
     }
     .banner__job{
